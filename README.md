@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# FARMÁCIA POPULAR
 
-`CURSO`
+`Sistemas de Informação`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar de Processo de Negócio`
 
-`SEMESTRE`
+`2025/01`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de uma aplicação web voltada para o gerenciamento de uma farmácia popular, unidade de bairro ou farmácia em cidade do interior, na qual há processos manuais e um número reduzido de funcionários, buscando racionalizar o controle de estoque, cadastro de clientes, fornecedores e de produtos..
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Davi Guedes de Ávila
+* Emili Barbosa Silva
+* Guilherme Neves Rodrigues
+* Humberto Faria Menezes Samora
+* Júlia Clara Madureira Silva
+* Lilith Fernandes
 
 ## Orientador
 
-* Nome completo do professor 1
+* Cléia Márcia Gomes Amaral
 
 ## Instruções de utilização
 
