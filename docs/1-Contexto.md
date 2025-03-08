@@ -11,10 +11,10 @@ Citar o problema específico de pequenas farmácias.
 O objetivo geral deste trabalho é o desenvolvimento de uma aplicação web para a gestão de uma farmácia popular, permitindo o cadastro de produtos, o controle de estoque, a administração de fornecedores e o rastreamento de medicamentos de forma eficiente.
 
 Como objetivos específicos, podemos ressaltar:
-●	Cadastro de produtos: Desenvolver um módulo que permita o registro detalhado de medicamentos e outros itens comercializados, incluindo informações como nome, lote, data de validade, preço e categoria, garantindo a organização e o fácil acesso aos dados.
-●	Controle de estoque: Implementar um sistema de monitoramento em tempo real que permita o acompanhamento das quantidades disponíveis, alertando sobre a necessidade de reposição e evitando desperdícios devido ao vencimento de produtos.
-●	Cadastro de fornecedores: Criar um módulo para o registro e gerenciamento de fornecedores, possibilitando o controle de pedidos, prazos de entrega e histórico de compras, facilitando a reposição de produtos e a avaliação da qualidade dos insumos adquiridos.
-●	Cadastro de clientes: Desenvolver uma funcionalidade para armazenar informações dos clientes, permitindo um atendimento mais ágil e personalizado, além de possibilitar o controle de compras recorrentes e a aplicação de programas de fidelização.
+* Cadastro de produtos: Desenvolver um módulo que permita o registro detalhado de medicamentos e outros itens comercializados, incluindo informações como nome, lote, data de validade, preço e categoria, garantindo a organização e o fácil acesso aos dados.
+* Controle de estoque: Implementar um sistema de monitoramento em tempo real que permita o acompanhamento das quantidades disponíveis, alertando sobre a necessidade de reposição e evitando desperdícios devido ao vencimento de produtos.
+* Cadastro de fornecedores: Criar um módulo para o registro e gerenciamento de fornecedores, possibilitando o controle de pedidos, prazos de entrega e histórico de compras, facilitando a reposição de produtos e a avaliação da qualidade dos insumos adquiridos.
+* Cadastro de clientes: Desenvolver uma funcionalidade para armazenar informações dos clientes, permitindo um atendimento mais ágil e personalizado, além de possibilitar o controle de compras recorrentes e a aplicação de programas de fidelização.
 
 ## Justificativa
 
