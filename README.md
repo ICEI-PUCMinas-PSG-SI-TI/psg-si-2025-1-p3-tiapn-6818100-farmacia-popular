@@ -2,7 +2,7 @@
 
 `Sistemas de Informação`
 
-`Trabalho Interdisciplinar de Processo de Negócio`
+`Trabalho Interdisciplinar: Aplicações para Processos de Negócios`
 
 `2025/01`
 
