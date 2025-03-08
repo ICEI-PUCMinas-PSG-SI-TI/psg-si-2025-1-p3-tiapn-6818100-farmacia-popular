@@ -8,19 +8,19 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Persona 1 - João Silva
+Idade: 28 anos
+Profissão: Atendente e operador de caixa em uma farmácia de bairro
+Experiência com tecnologia: Básica, utiliza smartphone para redes sociais e navegação na internet, mas tem pouca experiência com sistemas de gestão.
+Desafios: Atualmente, precisa registrar manualmente as vendas em um caderno e conferir o estoque diariamente para evitar a falta de produtos. Tem dificuldade em localizar rapidamente medicamentos no estoque e costuma perder tempo procurando informações sobre fornecedores.
+Interação com a aplicação: João utilizará a aplicação principalmente para registrar vendas, atualizar o estoque e consultar produtos disponíveis. Ele precisa de um sistema intuitivo, com menus claros e rápidos, para evitar erros e otimizar seu tempo de atendimento. A funcionalidade de alertas para reposição de estoque será especialmente útil para ajudá-lo a evitar a falta de medicamentos essenciais.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Persona 2 - Maria Souza (Proprietária da Farmácia)
+Idade: 45 anos
+Profissão: Proprietária e gestora de uma farmácia em uma cidade do interior
+Experiência com tecnologia: Moderada, usa o computador para tarefas administrativas básicas, como controle de caixa e emissão de notas fiscais, mas não tem experiência com sistemas complexos de gestão.
+Desafios: Maria precisa acompanhar as finanças da farmácia, gerenciar o estoque e lidar com fornecedores, mas encontra dificuldades para manter registros organizados e identificar quais produtos precisam ser repostos. Atualmente, depende de anotações manuais e planilhas simples, o que torna a administração demorada e sujeita a erros.
+Interação com a aplicação: Maria utilizará a aplicação para monitorar o desempenho da farmácia, acessar relatórios financeiros, gerenciar pedidos a fornecedores e verificar o estoque em tempo real. Para ela, é essencial que o sistema seja simples e apresente informações de forma clara e acessível, permitindo um gerenciamento eficiente sem demandar conhecimentos técnicos avançados.
 
 ## Histórias de Usuários
 
