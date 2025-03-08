@@ -36,16 +36,16 @@ Interação com a aplicação: Maria utilizará a aplicação para monitorar o d
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|João Silva (Funcionário da farmácia)  | Registrar as vendas de medicamentos no sistema de forma rápida e intuitiva           | Evitar erros no controle de estoque e agilizar o atendimento ao cliente.               |
-|João Silva (Funcionário da farmácia)       | Consultar rapidamente a disponibilidade de um medicamento no estoque                 | Informar o cliente com precisão e evitar perda de tempo procurando manualmente. |
-|João Silva (Funcionário da farmácia)       | Receber alertas automáticos sobre produtos com estoque baixo                 | Solicitar reposição a tempo e garantir que os clientes encontrem os medicamentos de que precisam. |
-|Maria Souza (Proprietária da farmácia)       | Aacessar um relatório detalhado sobre vendas e movimentação de estoque                 | Monitorar o desempenho da farmácia e tomar decisões estratégicas com mais segurança. |
-|Maria Souza (Proprietária da farmácia)     | Cadastrar e gerenciar fornecedores dentro do sistema                 | Facilitar a reposição de medicamentos e acompanhar prazos de entrega. |
-|Maria Souza (Proprietária da farmácia)       | Definir permissões de acesso para diferentes usuários do sistema                 | Garantir que cada funcionário utilize apenas as funcionalidades necessárias para sua função. |
-|Maria Souza (Proprietária da farmácia)      | Receber notificações sobre produtos próximos do vencimento                 | Evitar desperdício e garantir que os medicamentos vendidos estejam dentro da validade. |
-|João Silva (Funcionário da farmácia)       | Cadastrar clientes no sistema com seus dados pessoais                 | Atender às exigências legais na venda de medicamentos controlados e garantir um registro seguro para futuras consultas. |
+|EU COMO... `PERSONA`                   | QUERO/PRECISO ... `FUNCIONALIDADE`                                         |PARA ... `MOTIVO/VALOR`                                                                                                  |
+|---------------------------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+|João Silva (Funcionário da farmácia)   | Registrar as vendas de medicamentos no sistema de forma rápida e intuitiva | Evitar erros no controle de estoque e agilizar o atendimento ao cliente.                                                |
+|João Silva (Funcionário da farmácia)   | Consultar rapidamente a disponibilidade de um medicamento no estoque       | Informar o cliente com precisão e evitar perda de tempo procurando manualmente.                                         |
+|João Silva (Funcionário da farmácia)   | Receber alertas automáticos sobre produtos com estoque baixo               | Solicitar reposição a tempo e garantir que os clientes encontrem os medicamentos de que precisam.                       |
+|Maria Souza (Proprietária da farmácia) | Aacessar um relatório detalhado sobre vendas e movimentação de estoque     | Monitorar o desempenho da farmácia e tomar decisões estratégicas com mais segurança.                                    |
+|Maria Souza (Proprietária da farmácia) | Cadastrar e gerenciar fornecedores dentro do sistema                       | Facilitar a reposição de medicamentos e acompanhar prazos de entrega.                                                   |
+|Maria Souza (Proprietária da farmácia) | Definir permissões de acesso para diferentes usuários do sistema           | Garantir que cada funcionário utilize apenas as funcionalidades necessárias para sua função.                            |
+|Maria Souza (Proprietária da farmácia) | Receber notificações sobre produtos próximos do vencimento                 | Evitar desperdício e garantir que os medicamentos vendidos estejam dentro da validade.                                  |
+|João Silva (Funcionário da farmácia)   | Cadastrar clientes no sistema com seus dados pessoais                      | Atender às exigências legais na venda de medicamentos controlados e garantir um registro seguro para futuras consultas. |
 
 
 
