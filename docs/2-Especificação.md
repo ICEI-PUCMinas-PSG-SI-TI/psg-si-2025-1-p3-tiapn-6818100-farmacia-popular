@@ -11,16 +11,25 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 Persona 1 - João Silva
 
 Idade: 28 anos
+
 Profissão: Atendente e operador de caixa em uma farmácia de bairro
+
 Experiência com tecnologia: Básica, utiliza smartphone para redes sociais e navegação na internet, mas tem pouca experiência com sistemas de gestão.
+
 Desafios: Atualmente, precisa registrar manualmente as vendas em um caderno e conferir o estoque diariamente para evitar a falta de produtos. Tem dificuldade em localizar rapidamente medicamentos no estoque e costuma perder tempo procurando informações sobre fornecedores.
+
 Interação com a aplicação: João utilizará a aplicação principalmente para registrar vendas, atualizar o estoque e consultar produtos disponíveis. Ele precisa de um sistema intuitivo, com menus claros e rápidos, para evitar erros e otimizar seu tempo de atendimento. A funcionalidade de alertas para reposição de estoque será especialmente útil para ajudá-lo a evitar a falta de medicamentos essenciais.
 
 Persona 2 - Maria Souza (Proprietária da Farmácia)
+
 Idade: 45 anos
+
 Profissão: Proprietária e gestora de uma farmácia em uma cidade do interior
+
 Experiência com tecnologia: Moderada, usa o computador para tarefas administrativas básicas, como controle de caixa e emissão de notas fiscais, mas não tem experiência com sistemas complexos de gestão.
+
 Desafios: Maria precisa acompanhar as finanças da farmácia, gerenciar o estoque e lidar com fornecedores, mas encontra dificuldades para manter registros organizados e identificar quais produtos precisam ser repostos. Atualmente, depende de anotações manuais e planilhas simples, o que torna a administração demorada e sujeita a erros.
+
 Interação com a aplicação: Maria utilizará a aplicação para monitorar o desempenho da farmácia, acessar relatórios financeiros, gerenciar pedidos a fornecedores e verificar o estoque em tempo real. Para ela, é essencial que o sistema seja simples e apresente informações de forma clara e acessível, permitindo um gerenciamento eficiente sem demandar conhecimentos técnicos avançados.
 
 ## Histórias de Usuários
