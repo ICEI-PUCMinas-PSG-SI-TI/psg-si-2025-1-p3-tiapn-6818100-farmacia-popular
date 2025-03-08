@@ -24,7 +24,6 @@ A implementação deste sistema se justifica pela necessidade de informatizar a 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+A aplicação será utilizada por proprietários e funcionários de pequenas farmácias, que geralmente possuem equipes reduzidas e processos manuais. Esses usuários têm conhecimento prático da rotina farmacêutica, mas, muitas vezes, pouca familiaridade com sistemas informatizados. Por isso, a interface deve ser intuitiva e de fácil aprendizado, exigindo mínimo treinamento.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Além de atender clientes, os funcionários também gerenciam estoque e fornecedores, enquanto o proprietário acumula funções de gestão. Assim, a aplicação deve ser acessível, funcional e otimizar o dia a dia sem adicionar complexidade desnecessária.
