@@ -56,16 +56,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|------|-----------------------------------------------------------------------------|-------|
+|RF-001| Permitir que o funcionário registre vendas de medicamentos.                 | ALTA  | 
+|RF-002| Permitir consulta de estoque.                                               | ALTA  |
+|RF-003| Emitir alertas automáticos quando um medicamento estiver com estoque baixo. | ALTA  |
+|RF-004| Gerar relatórios sobre vendas e movimentação de estoque.                    | ALTA  |
+|RF-005| Permitir o cadastro e gerenciamento de fornecedores.                        | MÉDIA |
+|RF-006| Permitir acesso para diferentes usuários.                                   | ALTA  |
+|RF-007| Gerar relatório sobre produtos próximos ao vencimento.                      | ALTA  |
+|RF-008| Permitir o cadastro de clientes para a venda de medicamentos controlados.   | ALTA  |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|-------|----------------------------------------------------------------------------------------------------------------|--------|
+|RNF-001| O sistema deve ser acessível via navegador web em computadores desktop.                                        | ALTA   | 
+|RNF-002| A interface do sistema deve ser intuitiva e de fácil uso para usuários com pouca familiaridade com tecnologia. | ALTA   |
+|RNF-003| O banco de dados deve garantir a integridade e segurança das informações, incluindo backups periódicos.        | ALTA   |
+|RNF-004| O sistema deve permitir acesso baseado em níveis de permissão para diferentes perfis de usuários.              | ALTA   |
+|RNF-005| O sistema deve ser compatível com os principais navegadores modernos (Chrome, Firefox, Edge).                  | MÉDIA  |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
