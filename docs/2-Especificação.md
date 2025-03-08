@@ -47,8 +47,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Maria Souza (Proprietária da farmácia)      | Receber notificações sobre produtos próximos do vencimento                 | Evitar desperdício e garantir que os medicamentos vendidos estejam dentro da validade. |
 |João Silva (Funcionário da farmácia)       | Cadastrar clientes no sistema com seus dados pessoais                 | Atender às exigências legais na venda de medicamentos controlados e garantir um registro seguro para futuras consultas. |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
 
 
 ## Requisitos
