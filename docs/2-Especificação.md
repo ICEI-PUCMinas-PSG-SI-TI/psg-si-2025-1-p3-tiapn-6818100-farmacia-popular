@@ -9,6 +9,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ## Personas
 
 Persona 1 - João Silva
+
 Idade: 28 anos
 Profissão: Atendente e operador de caixa em uma farmácia de bairro
 Experiência com tecnologia: Básica, utiliza smartphone para redes sociais e navegação na internet, mas tem pouca experiência com sistemas de gestão.
