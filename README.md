@@ -15,7 +15,7 @@ Desenvolvimento de uma aplicação web voltada para o gerenciamento de uma farm�
 * Guilherme Neves Rodrigues
 * Humberto Faria Menezes Samora
 * Júlia Clara Madureira Silva
-* Lilith Fernandes
+* Lilith Cezar Fernandes Patrocinio
 
 ## Orientador
 
