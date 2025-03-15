@@ -99,7 +99,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|----------------------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre                |
 |02| Não pode ser desenvolvido um módulo de backend                       |
-|03| O sistema deve estar hospedado em um domínio aprovado pela PUC Minas |
+|03| O projeto deve estar hospedado em um domínio aprovado pela PUC Minas |
+|04| O projeto deve ser desenvolvido com banco de dados                   |
+|05| Utilizar de uma ferramenta BPM para automatização dos processos      |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
