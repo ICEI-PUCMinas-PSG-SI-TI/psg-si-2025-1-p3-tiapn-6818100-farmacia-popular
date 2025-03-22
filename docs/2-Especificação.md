@@ -4,8 +4,7 @@ O problema central a ser resolvido neste projeto é a falta de um sistema integr
 
 ## Personas
 
-*Persona 1 - João Silva*
-
+**Persona 1 - João Silva**
 Idade: 28 anos
 
 Profissão: Atendente e operador de caixa em uma farmácia de bairro
@@ -16,8 +15,7 @@ Desafios: Atualmente, precisa registrar manualmente as vendas em um caderno e co
 
 Interação com a aplicação: João utilizará a aplicação principalmente para registrar vendas, atualizar o estoque e consultar produtos disponíveis. Ele precisa de um sistema intuitivo, com menus claros e rápidos, para evitar erros e otimizar seu tempo de atendimento. A funcionalidade de alertas para reposição de estoque será especialmente útil para ajudá-lo a evitar a falta de medicamentos essenciais.
 
-Persona 2 - Maria Souza (Proprietária da Farmácia)
-
+**Persona 2 - Maria Souza (Proprietária da Farmácia)**
 Idade: 45 anos
 
 Profissão: Proprietária e gestora de uma farmácia em uma cidade do interior
