@@ -15,13 +15,13 @@ Gerenciar fornecedores: A gerente cadastra os fornecedores em uma planilha excel
 
 Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia popular, unidade de bairro ou farmácia em cidade do interior, na qual há muitos processos manuais e um número reduzido de funcionários, buscando otimizar o controle de estoque, cadastro de clientes, fornecedores e de produtos. A solução será projetada para oferecer uma interface intuitiva e eficiente, permitindo a informatização de processos essenciais, como o registro de medicamentos e a emissão de relatórios financeiros. Além disso, a aplicação visa garantir conformidade com normas regulatórias do setor farmacêutico, proporcionando maior segurança e transparência na gestão dos produtos e atendimentos.
 
-**Consultar estoque
-*Gerenciar estoque
-*Registrar vendas
-*Gerar relatório detalhado de vendas
-*Gerenciar e cadastrar fornecedores
-*Cadastrar clientes
-*Gerenciar pedidos de compra
+* Consultar estoque
+* Gerenciar estoque
+* Registrar vendas
+* Gerar relatório detalhado de vendas
+* Gerenciar e cadastrar fornecedores
+* Cadastrar clientes
+* Gerenciar pedidos de compra
 
 ### 3.3. Modelagem dos processos
 
