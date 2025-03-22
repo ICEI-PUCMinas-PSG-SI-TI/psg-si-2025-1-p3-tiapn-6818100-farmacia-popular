@@ -102,5 +102,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |03| O projeto deve ser desenvolvido com banco de dados                   |
 |04| Utilizar de uma ferramenta BPM para modelagem dos processos          |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
