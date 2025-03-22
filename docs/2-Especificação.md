@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+O problema central a ser resolvido neste projeto é a falta de um sistema integrado e informatizado para gerenciar os principais processos operacionais de uma farmácia popular, incluindo o cadastro de produtos, o controle de estoque, a gestão de fornecedores e o rastreamento de medicamentos. A ausência de um controle eficiente pode resultar em erros no registro de informações, desorganização no estoque, atrasos na reposição de mercadorias e dificuldades no cumprimento das regulamentações sanitárias. Além disso, a falta de visibilidade sobre os produtos e fornecedores impacta diretamente a qualidade do atendimento ao cliente e a rentabilidade do negócio. Dessa forma, torna-se necessário o desenvolvimento de uma aplicação web que centralize e informatize esses processos, garantindo maior precisão, agilidade e segurança na gestão da farmácia. Citar o problema específico de pequenas farmácias.
 
 ## Personas
 
