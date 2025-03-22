@@ -4,7 +4,7 @@ O problema central a ser resolvido neste projeto é a falta de um sistema integr
 
 ## Personas
 
-Persona 1 - João Silva
+*Persona 1 - João Silva*
 
 Idade: 28 anos
 
