@@ -17,6 +17,7 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 * Gerar relatório detalhado de vendas
 * Gerenciar e cadastrar fornecedores
 * Cadastrar clientes
+* Cadastrar produto
 * Gerenciar pedidos de compra
 
 ### 3.3. Modelagem dos processos
