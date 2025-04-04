@@ -63,8 +63,6 @@ O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", e
 * Produtos com quantidade igual ou inferior à quantidade mínima;
 * Produtos a vencer;
 
-Para os relatórios de "Vendas" e "Faturamento" pode escolher um período. Caso não seja informado, será considerado o dia atual. 
-
-Em seguida o empregado deve confirmar a ação desejada.
+Para os relatórios de "Vendas" e "Faturamento" pode ser escolhido um período. Caso não seja informado, será considerado o data atual. Em seguida o empregado deve confirmar a ação desejada.
 
 
