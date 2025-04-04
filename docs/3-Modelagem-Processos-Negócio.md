@@ -21,30 +21,9 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 - Gerenciar Produtos](./processos/processo-1-cadastrar-produtos.md "Cadastrar Produtos.")
+[Processo 1 - Gerenciar Produtos](./processos/processo-1-gerenciar-produtos.md "Gerenciar Produtos.")
 
-O processo se inicia com um funcionário (ou gerente) acessando o sistema e selecionando a opção "Gerenciar Produtos", em seguida escolhe a ação desejada
-* Cadastrar;
-* Atualizar;
-* Excluir (deleção lógica);
-
-Para atualização ou exclusão é necessário pesquisar o produto desejado.
-
-Para cadastro ou atualização são fornecidas as informações:
-* Descrição
-* Tipo (comum ou medicamento)
-* Laboratório (somente para medicamentos)
-* Lote (somente para medicamentos)
-* Data de validade
-* Preço de venda
-* Estoque mínimo
-* Estoque máximo
-
-O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
-
-[Processo 2 - Realizar Vendas](./processos/realizar_vendas.md "Realizar Vendas.")
-
-O cliente solicita um produto, o funcionário consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, informa a quantidade desejada e o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema confirmar o recebimento do pagamento, registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
+[Processo 2 - Realizar Vendas](./processos/processo-2-realizar-vendas.md "Realizar Vendas.")
 
 [Processo 3 - Gerenciar Fornecedores](./processos/gerenciar_fornecedores.md "Gerenciar Fornecedores.")
 
