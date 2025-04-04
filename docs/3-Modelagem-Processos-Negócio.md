@@ -13,28 +13,58 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 * Cadastrar Produtos
 * Realizar Vendas
-* Gerenciar Estoques
-* Gerar Relatórios
 * Gerenciar Fornecedores
+* Gerar Relatórios
 * Gerenciar Pedidos de Compra
+* Gerenciar Estoque
 * Cadastrar Clientes
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Cadastrar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
+[Processo 1 - Cadastrar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
 
 O processo se inicia com um funcionário (ou gerente) acessando o sistema e clicando na opção "Cadastrar Produtos". Na nova tela, são inseridas as informações:
-* Descrição [obrigatório]
-* Laboratório
-* Lote
-* Data de validade [obrigatório]
-* Preço de venda [obrigatório]
-* Estoque mínimo [obrigatório]
-* Estoque máximo [obrigatório]
+* Descrição
+* Tipo (comum ou medicamento)
+* Laboratório (somente para medicamentos)
+* Lote (somente para medicamentos)
+* Data de validade
+* Preço de venda
+* Estoque mínimo
+* Estoque máximo
 
 O funcionário confirma a inclusão da item e o sistema cadastra as informações no banco de dados.
 
+[Processo 2 - Realizar Vendas](./processos/realizar_vendas.md "Realizar Vendas.")
 
-[PROCESSO 2 - Realizar Vendas](./processos/realizar_vendas.md "Realizar Vendas.")
+O cliente solicita um produto, o funcionário consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
 
-O cliente solicita um produto, o funcionário consulta a disponibilidade no item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
+[Processo 3 - Gerenciar Fornecedores](./processos/gerenciar_fornecedores.md "Gerenciar Fornecedores.")
+
+O funcionário (ou gerente) acessa o sistema e clica na opção "Gerenciar Fornecedores", em seguida escolhe a ação desejada na próxima tela:
+* Cadastrar;
+* Atualizar;
+* Excluir (deleção lógica);
+
+Para cadastro ou atualização são solicitadas as informações:
+* Nome;
+* E-mail;
+* Telefone;
+* Whatsapp;
+* Endereço;
+
+Em seguida o empregado deve confirmar a ação desejada.
+
+[Processo 4 - Gerar Relatórios](./processos/gerar_relatorios.md "Gerar Relatórios.")
+
+O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", em seguida escolhe o tipo desejado na próxima tela:
+* Vendas;
+* Faturamento
+* Produtos com quantidade igual ou inferior à quantidade mínima
+* Produtos a vencer;
+
+Para os relatórios de "Vendas" e "Faturamento" pode escolher um período. Caso não seja informado, será considerado o dia atual. 
+
+Em seguida o empregado deve confirmar a ação desejada.
+
+
