@@ -31,5 +31,7 @@ O processo se inicia com um funcionário (ou gerente) acessando o sistema e clic
 * Estoque mínimo [obrigatório]
 * Estoque máximo [obrigatório]
 
+O funcionário confirma a inclusão da item e o sistema cadastra as informações no banco de dados.
+
 [PROCESSO 2 - Realizar Vendas](./processos/realizar_vendas.md "Detalhamento do Processo 2.")
 O cliente solicita um produto, o funcionário consulta a disponibilidade no item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
