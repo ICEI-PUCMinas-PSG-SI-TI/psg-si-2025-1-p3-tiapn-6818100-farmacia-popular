@@ -1,9 +1,8 @@
 ### 3.3.2 Processo 2 – NOME DO PROCESSO
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 2. 
-Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN._
+O cliente solicita um produto, o funcionário consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, informa a quantidade desejada e o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema confirmar o recebimento do pagamento, registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
+![Exemplo de um Modelo BPMN do PROCESSO 2](../images/realizar-venda.png "Modelo BPMN do Processo 2.")
 
 
 #### Detalhamento das atividades
