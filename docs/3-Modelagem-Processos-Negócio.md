@@ -11,7 +11,7 @@
 
 Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia popular, unidade de bairro ou farmácia em cidade do interior, na qual há muitos processos manuais e um número reduzido de funcionários, buscando otimizar o controle de estoque, cadastro de clientes, fornecedores e de produtos. A solução será projetada para oferecer uma interface intuitiva e eficiente, permitindo a informatização de processos essenciais, como o registro de medicamentos e a emissão de relatórios financeiros. Além disso, a aplicação visa garantir conformidade com normas regulatórias do setor farmacêutico, proporcionando maior segurança e transparência na gestão dos produtos e atendimentos.
 
-* Cadastrar Produtos
+* Gerenciar Produtos
 * Realizar Vendas
 * Gerenciar Fornecedores
 * Gerar Relatórios
@@ -21,7 +21,7 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 - Cadastrar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
+[Processo 1 - Gerenciar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
 
 O processo se inicia com um funcionário (ou gerente) acessando o sistema e selecionando a opção "Gerenciar Produtos", em seguida escolhe a ação desejada
 * Cadastrar;
