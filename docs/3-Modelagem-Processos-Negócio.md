@@ -59,8 +59,8 @@ Em seguida o empregado deve confirmar a ação desejada.
 
 O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", em seguida escolhe o tipo desejado na próxima tela:
 * Vendas;
-* Faturamento
-* Produtos com quantidade igual ou inferior à quantidade mínima
+* Faturamento;
+* Produtos com quantidade igual ou inferior à quantidade mínima;
 * Produtos a vencer;
 
 Para os relatórios de "Vendas" e "Faturamento" pode escolher um período. Caso não seja informado, será considerado o dia atual. 
