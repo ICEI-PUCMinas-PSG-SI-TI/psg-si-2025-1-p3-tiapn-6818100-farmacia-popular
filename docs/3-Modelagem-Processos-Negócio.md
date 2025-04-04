@@ -23,7 +23,14 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 [Processo 1 - Cadastrar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
 
-O processo se inicia com um funcionário (ou gerente) acessando o sistema e clicando na opção "Cadastrar Produtos". Na nova tela, são inseridas as informações:
+O processo se inicia com um funcionário (ou gerente) acessando o sistema e selecionando a opção "Gerenciar Produtos", em seguida escolhe a ação desejada
+* Cadastrar;
+* Atualizar;
+* Excluir (deleção lógica);
+
+Para atualização ou exclusão é necessário pesquisar o produto desejado.
+
+Para cadastro ou atualização são fornecidas as informações:
 * Descrição
 * Tipo (comum ou medicamento)
 * Laboratório (somente para medicamentos)
@@ -33,11 +40,11 @@ O processo se inicia com um funcionário (ou gerente) acessando o sistema e clic
 * Estoque mínimo
 * Estoque máximo
 
-O funcionário confirma a inclusão da item e o sistema cadastra as informações no banco de dados.
+O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
 
 [Processo 2 - Realizar Vendas](./processos/realizar_vendas.md "Realizar Vendas.")
 
-O cliente solicita um produto, o funcionário consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
+O cliente solicita um produto, o funcionário consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, informa a quantidade desejada e o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema confirmar o recebimento do pagamento, registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
 
 [Processo 3 - Gerenciar Fornecedores](./processos/gerenciar_fornecedores.md "Gerenciar Fornecedores.")
 
@@ -46,14 +53,16 @@ O funcionário (ou gerente) acessa o sistema e clica na opção "Gerenciar Forne
 * Atualizar;
 * Excluir (deleção lógica);
 
-Para cadastro ou atualização são solicitadas as informações:
+Para atualização ou exclusão é necessário pesquisar o produto desejado.
+
+Para cadastro ou atualização são fornecidas as informações:
 * Nome;
 * E-mail;
 * Telefone;
 * Whatsapp;
 * Endereço;
 
-Em seguida o empregado deve confirmar a ação desejada.
+O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
 
 [Processo 4 - Gerar Relatórios](./processos/gerar_relatorios.md "Gerar Relatórios.")
 
@@ -63,6 +72,6 @@ O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", e
 * Produtos com quantidade igual ou inferior à quantidade mínima;
 * Produtos a vencer;
 
-Para os relatórios de "Vendas" e "Faturamento" pode ser escolhido um período. Caso não seja informado, será considerado o data atual. Em seguida o empregado deve confirmar a ação desejada.
+Para os relatórios de "Vendas" e "Faturamento" pode ser escolhido um período. Caso não seja informado, será considerado a data atual. Em seguida o empregado deve confirmar a ação desejada, o sistema pesquisa as informações no banco de dados, gera o relatório e exibe na tela.
 
 
