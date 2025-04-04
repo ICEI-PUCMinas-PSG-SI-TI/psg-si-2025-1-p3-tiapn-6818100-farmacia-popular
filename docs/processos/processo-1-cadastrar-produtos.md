@@ -1,7 +1,23 @@
 ### 3.3.1 Processo 1 – Cadastrar Produtos
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
+O processo se inicia com um funcionário (ou gerente) acessando o sistema e selecionando a opção "Gerenciar Produtos", em seguida escolhe a ação desejada
+* Cadastrar;
+* Atualizar;
+* Excluir (deleção lógica);
+
+Para atualização ou exclusão é necessário pesquisar o produto desejado.
+
+Para cadastro ou atualização são fornecidas as informações:
+* Descrição
+* Tipo (comum ou medicamento)
+* Laboratório (somente para medicamentos)
+* Lote (somente para medicamentos)
+* Data de validade
+* Preço de venda
+* Estoque mínimo
+* Estoque máximo
+
+O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
 
 ![Exemplo de um Modelo BPMN do PROCESSO 1](../images/cadastrar_produtos.png  "Modelo BPMN do Processo 1.")
 
