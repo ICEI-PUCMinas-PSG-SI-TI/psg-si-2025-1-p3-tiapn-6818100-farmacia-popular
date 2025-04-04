@@ -11,17 +11,25 @@
 
 Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia popular, unidade de bairro ou farmácia em cidade do interior, na qual há muitos processos manuais e um número reduzido de funcionários, buscando otimizar o controle de estoque, cadastro de clientes, fornecedores e de produtos. A solução será projetada para oferecer uma interface intuitiva e eficiente, permitindo a informatização de processos essenciais, como o registro de medicamentos e a emissão de relatórios financeiros. Além disso, a aplicação visa garantir conformidade com normas regulatórias do setor farmacêutico, proporcionando maior segurança e transparência na gestão dos produtos e atendimentos.
 
-* Consultar estoque
-* Gerenciar estoque
-* Registrar vendas
-* Gerar relatório detalhado de vendas
-* Gerenciar e cadastrar fornecedores
-* Cadastrar clientes
-* Cadastrar produto
-* Gerenciar pedidos de compra
+* Cadastrar Produtos
+* Realizar Vendas
+* Gerenciar Estoques
+* Gerar Relatórios
+* Gerenciar Fornecedores
+* Gerenciar Pedidos de Compra
+* Cadastrar Clientes
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Nome do Processo](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
+[PROCESSO 1 - Cadastrar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
+O processo se inicia com um funcionário (ou gerente) acessando o sistema e clicando na opção "Cadastrar Produtos". Na nova tela, são inseridas as informações:
+** Descrição [obrigatório]
+** Laboratório
+** Lote
+** Data de validade [obrigatório]
+** Preço de venda [obrigatório]
+** Estoque mínimo [obrigatório]
+** Estoque máximo [obrigatório]
 
-[PROCESSO 2 - Nome do Processo](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[PROCESSO 2 - Realizar Vendas](./processos/realizar_vendas.md "Detalhamento do Processo 2.")
+O cliente solicita um produto, o funcionário consulta a disponibilidade no item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. Estas atividades podem se repetir se o cliente desejar mais produtos. Em seguida o carrinho é finalizado sendo gerado um número de pedido, ou o processo termina caso o carrinho esteja vazio. O funcionário separa os produtos, o cliente informa o meio de pagamento, o funcionário seleciona a forma de pagamento no sistema, o cliente realiza o pagamento, o sistema registra a venda e atualiza o estoque. O processo finaliza com os produtos sendo entregues ao cliente.
