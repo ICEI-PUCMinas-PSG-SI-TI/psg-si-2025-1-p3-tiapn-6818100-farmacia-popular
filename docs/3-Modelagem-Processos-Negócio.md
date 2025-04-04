@@ -21,7 +21,7 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 - Gerenciar Produtos](./processos/cadastrar_produtos.md "Cadastrar Produtos.")
+[Processo 1 - Gerenciar Produtos](./processos/processo-1-cadastrar-produtos.md "Cadastrar Produtos.")
 
 O processo se inicia com um funcionário (ou gerente) acessando o sistema e selecionando a opção "Gerenciar Produtos", em seguida escolhe a ação desejada
 * Cadastrar;
