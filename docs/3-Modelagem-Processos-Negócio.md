@@ -30,7 +30,6 @@ O processo se inicia com um funcionário (ou gerente) acessando o sistema e clic
 * Preço de venda [obrigatório]
 * Estoque mínimo [obrigatório]
 * Estoque máximo [obrigatório]
-
 O funcionário confirma a inclusão da item e o sistema cadastra as informações no banco de dados.
 
 [PROCESSO 2 - Realizar Vendas](./processos/realizar_vendas.md "Detalhamento do Processo 2.")
