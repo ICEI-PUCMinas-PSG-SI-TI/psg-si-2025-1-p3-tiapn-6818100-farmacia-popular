@@ -27,7 +27,7 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 [Processo 3 - Gerenciar Fornecedores](./processos/processo-3-gerenciar-fornecedores.md "Gerenciar Fornecedores.")
 
-[Processo 4 - Gerar Relatórios](./processos/gerar-relatorios.md "Gerar Relatórios.")
+[Processo 4 - Gerar Relatórios](./processos/processo-4-gerar-relatorios.md "Gerar Relatórios.")
 
 O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", em seguida escolhe o tipo desejado na próxima tela:
 * Vendas;
