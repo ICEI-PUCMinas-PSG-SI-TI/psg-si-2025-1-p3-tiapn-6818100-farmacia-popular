@@ -1,22 +1,8 @@
-### 3.3.3 Processo e – GERENCIAR FORNECEDORES
+### 3.3.4 Processo 4 – GERAR RELATÓRIOS
 
-O funcionário (ou gerente) acessa o sistema e clica na opção "Gerenciar Fornecedores", em seguida escolhe a ação desejada na próxima tela:
-* Cadastrar;
-* Atualizar;
-* Excluir (deleção lógica);
 
-Para atualização ou exclusão é necessário pesquisar o produto desejado.
 
-Para cadastro ou atualização são fornecidas as informações:
-* Nome;
-* E-mail;
-* Telefone;
-* Whatsapp;
-* Endereço;
-
-O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
-
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/gerenciar-fonecedores.png "Modelo BPMN do Processo 2.")
+![Exemplo de um Modelo BPMN do PROCESSO 2](../images/gerar-relatórios.png "Modelo BPMN do Processo 2.")
 
 #### Detalhamento das atividades
 
