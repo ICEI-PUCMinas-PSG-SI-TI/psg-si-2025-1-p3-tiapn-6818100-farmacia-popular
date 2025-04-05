@@ -25,7 +25,7 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 [Processo 2 - Realizar Vendas](./processos/processo-2-realizar-vendas.md "Realizar Vendas.")
 
-[Processo 3 - Gerenciar Fornecedores](./processos/gerenciar-fornecedores.md "Gerenciar Fornecedores.")
+[Processo 3 - Gerenciar Fornecedores](./processos/processo-3-gerenciar-fornecedores.md "Gerenciar Fornecedores.")
 
 [Processo 4 - Gerar Relatórios](./processos/gerar_relatorios.md "Gerar Relatórios.")
 
