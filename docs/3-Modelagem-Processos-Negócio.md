@@ -25,23 +25,7 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 [Processo 2 - Realizar Vendas](./processos/processo-2-realizar-vendas.md "Realizar Vendas.")
 
-[Processo 3 - Gerenciar Fornecedores](./processos/gerenciar_fornecedores.md "Gerenciar Fornecedores.")
-
-O funcionário (ou gerente) acessa o sistema e clica na opção "Gerenciar Fornecedores", em seguida escolhe a ação desejada na próxima tela:
-* Cadastrar;
-* Atualizar;
-* Excluir (deleção lógica);
-
-Para atualização ou exclusão é necessário pesquisar o produto desejado.
-
-Para cadastro ou atualização são fornecidas as informações:
-* Nome;
-* E-mail;
-* Telefone;
-* Whatsapp;
-* Endereço;
-
-O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
+[Processo 3 - Gerenciar Fornecedores](./processos/gerenciar-fornecedores.md "Gerenciar Fornecedores.")
 
 [Processo 4 - Gerar Relatórios](./processos/gerar_relatorios.md "Gerar Relatórios.")
 
