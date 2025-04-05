@@ -1,8 +1,14 @@
 ### 3.3.4 Processo 4 – GERAR RELATÓRIOS
 
+O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", em seguida escolhe o tipo desejado na próxima tela:
+* Vendas;
+* Faturamento;
+* Produtos com quantidade igual ou inferior à quantidade mínima;
+* Produtos a vencer;
 
+Para os relatórios de "Vendas" e "Faturamento" pode ser escolhido um período. Caso não seja informado, será considerado a data atual. Em seguida o empregado deve confirmar a ação desejada, o sistema pesquisa as informações no banco de dados, gera o relatório e exibe na tela e o processo é finalizado.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/gerar-relatórios.png "Modelo BPMN do Processo 2.")
+![Exemplo de um Modelo BPMN do PROCESSO 2](../images/gerar-relatorios.png "Modelo BPMN do Processo 2.")
 
 #### Detalhamento das atividades
 
