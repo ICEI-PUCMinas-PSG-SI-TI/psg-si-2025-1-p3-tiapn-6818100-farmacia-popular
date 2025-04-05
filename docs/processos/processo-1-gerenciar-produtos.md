@@ -1,5 +1,4 @@
-### 3.3.1 Processo 1 – Gerenciar Produtos
-
+### 3.3.1 Processo 1 – GERENCIAR PRODUTOS
 O processo se inicia com um funcionário (ou gerente) acessando o sistema e selecionando a opção "Gerenciar Produtos", em seguida escolhe a ação desejada
 * Cadastrar;
 * Atualizar;
