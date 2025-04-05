@@ -16,7 +16,7 @@ Para cadastro ou atualização são fornecidas as informações:
 
 O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/realizar-venda.png "Modelo BPMN do Processo 2.")
+![Exemplo de um Modelo BPMN do PROCESSO 2](../images/gerenciar-fonecedores.png "Modelo BPMN do Processo 2.")
 
 #### Detalhamento das atividades
 
