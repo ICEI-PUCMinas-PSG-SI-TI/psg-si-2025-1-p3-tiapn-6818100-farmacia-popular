@@ -29,12 +29,4 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 [Processo 4 - Gerar Relatórios](./processos/processo-4-gerar-relatorios.md "Gerar Relatórios.")
 
-O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios", em seguida escolhe o tipo desejado na próxima tela:
-* Vendas;
-* Faturamento;
-* Produtos com quantidade igual ou inferior à quantidade mínima;
-* Produtos a vencer;
-
-Para os relatórios de "Vendas" e "Faturamento" pode ser escolhido um período. Caso não seja informado, será considerado a data atual. Em seguida o empregado deve confirmar a ação desejada, o sistema pesquisa as informações no banco de dados, gera o relatório e exibe na tela e o processo é finalizado.
-
 
