@@ -1,4 +1,4 @@
-### 3.3.3 Processo e – GERENCIAR FORNECEDORES
+### 3.3.3 Processo 3 – GERENCIAR FORNECEDORES
 
 O funcionário (ou gerente) acessa o sistema e clica na opção "Gerenciar Fornecedores", em seguida escolhe a ação desejada na próxima tela:
 * Cadastrar;
