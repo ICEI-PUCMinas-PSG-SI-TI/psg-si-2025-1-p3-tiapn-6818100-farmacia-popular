@@ -17,7 +17,11 @@ Na atualização, o sistema exibe todos os itens do pedido e seu status conforme
 * Entregue;
 * Cancelado;
 
-O funcionário pode alterar o status do pedido, adicionar ou excluir novos itens caso o pedido não tenha sido entregue ou cancelado.
+Enquanto o pedido não tiver sido entegue ou cancelado, o funcionário pode exclui-lo ou alterá-lo. As ações referente a alterar são:
+* Alterar status do pedido;
+* Incluir item;
+* Alterar quantidade do item.
+* Remover item;
 
 O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação, exibe os dados do pedido na tela e o processo é finalizado.
 
