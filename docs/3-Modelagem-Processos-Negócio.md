@@ -29,4 +29,6 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 [Processo 4 - Gerar Relatórios](./processos/processo-4-gerar-relatorios.md "Gerar Relatórios.")
 
+[Processo 5 - Gerar Pedidos de Compra](./processos/processo-5-gerenciar-pedidos-de-compra.md "Gerenciar Pedidos de Compra.")
+
 
