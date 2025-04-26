@@ -45,7 +45,7 @@ Atualizado em: 25/04/2025
 Atualizado em: 25/04/2025
 
 | Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----            |    :----                  |      :----:    | :----:     | :----: | :----:          |
+| :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
 | Julia Clara      | Requisitos | 07/03/2025   | 04/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
 | Emili Barbosa    | Histórias de usuários     | 04/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
 | Guilherme Neves  | Personas                  | 07/03/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
