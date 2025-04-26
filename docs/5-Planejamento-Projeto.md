@@ -12,7 +12,7 @@
 
 ### Sprint 2
 - _Scrum master_: Davi Guedes
-- Especificação do projeto: Humberto Faria
+- Especificação do projeto e Modelo do Negócio: Humberto Faria
 - Restrições: Lilith Fernandes
 - Requisitos: Julia Clara
 - Histórias de usuários: Emili Barbosa
@@ -20,11 +20,11 @@
 
 ### Sprint 3
 - _Scrum master_: Davi Guedes
-- Arquitetura da solução: Julia Clara
-- Arquitetura da solução: Emili Barbosa
-- Wireframe: Lilith Fernandes
-- Banco de dados: Guilherme Neves
-- Banco de dados: Humberto Faria
+- Protótipos de telas: Lilith Fernandes
+- : Julia Clara
+- : Emili Barbosa
+- : Guilherme Neves
+- : Humberto Faria
 
 ## 5.1. Quadro de tarefas
 
@@ -46,13 +46,23 @@ Atualizado em: 25/04/2025
 
 | Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
-| Julia Clara      | Requisitos | 07/03/2025   | 04/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
+| Julia Clara      | Requisitos                | 07/03/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
 | Emili Barbosa    | Histórias de usuários     | 04/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
 | Guilherme Neves  | Personas                  | 07/03/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
 | Lilith Fernandes | Restrições                | 07/03/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
 | Humberto Faria   | Especificação do projeto  | 07/03/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
 
+## Sprint 3
 
+Atualizado em: 25/04/2025
+
+| Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
+| Julia Clara      |     | 11/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
+| Emili Barbosa    |     | 11/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
+| Guilherme Neves  |     | 11/04/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
+| Lilith Fernandes |     | 11/04/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
+| Humberto Faria   |     | 11/04/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
 
 Legenda:
 - ✔️: terminado
