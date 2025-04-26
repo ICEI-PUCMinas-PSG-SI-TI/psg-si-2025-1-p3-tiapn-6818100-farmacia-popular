@@ -19,12 +19,12 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
-![Tela de login](docs/images/login.png)
-![Tela de editar produto](docs/images/editar.png)
-![Tela do carrinho](docs/images/carrinho.png)
-![Tela de visualização dos fornecedores](docs/images/fornecedores.png)
-![Tela de cadastrar pedido](docs/images/cadastro-pedido.png)
-![Tela de gerenciar pedido](docs/images/gerenciar-pedido.png)
+![Tela de login](images/login.png)
+![Tela de editar produto](images/editar.png)
+![Tela do carrinho](images/carrinho.png)
+![Tela de visualização dos fornecedores](images/fornecedores.png)
+![Tela de cadastrar pedido](images/cadastro-pedido.png)
+![Tela de gerenciar pedido](images/gerenciar-pedido.png)
 
 
 ## Diagrama de Classes
