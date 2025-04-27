@@ -12,7 +12,7 @@
  
  **Exemplo do diagrama de Arquitetura**:
  
- ![Exemplo de Arquitetura](./images/arquitetura-exemplo.png)
+ ![Exemplo de Arquitetura](./images/arquitetura.png)
  
 
 ### 4.2. Protótipos de telas
