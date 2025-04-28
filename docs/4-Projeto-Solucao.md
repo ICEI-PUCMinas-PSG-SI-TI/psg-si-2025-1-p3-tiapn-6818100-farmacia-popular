@@ -44,6 +44,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
+ ![Modelo Entidade Relacionamento](./images/mer.png)
 
 ### 4.3. Modelo de dados
 
