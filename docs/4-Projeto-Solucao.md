@@ -52,7 +52,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
- ![Modelo Entidade Relacionamento](./images/mer.png)
+ ![Modelo Entidade Relacionamento](./images/modelo-er.png)
 
 #### 4.3.2 Esquema Relacional
 
@@ -62,9 +62,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 
 > - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
 
-![Exemplo de um modelo relacional](images/modeloRelacional.png "Exemplo de Modelo Relacional.")
----
-
+![Modelo Lógico](./images/modelo-relacional.png)
 
 #### 4.3.3 Modelo Físico
 
