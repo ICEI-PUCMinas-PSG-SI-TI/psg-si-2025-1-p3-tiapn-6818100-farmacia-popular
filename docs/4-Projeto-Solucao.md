@@ -72,50 +72,163 @@ Veja um exemplo:
 
 <code>
 
- -- Criação da tabela Médico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
-);
+-- -----------------------------------------------------
+-- Schema farmacia
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
+USE `farmacia` ;
 
+-- -----------------------------------------------------
+-- Table `farmacia`.`fornecedor`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`fornecedor` (
+  `id` INT NOT NULL,
+  `descricao` VARCHAR(80) NOT NULL,
+  `cnpj` VARCHAR(20) NOT NULL,
+  `telefone` VARCHAR(11) NOT NULL,
+  `estado` CHAR(2) NULL,
+  `cidade` VARCHAR(45) NULL,
+  `bairro` VARCHAR(45) NULL,
+  `logradouro` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
 
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
-);
+-- -----------------------------------------------------
+-- Table `farmacia`.`laboratorio`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`laboratorio` (
+  `id` INT NOT NULL,
+  `descricao` VARCHAR(80) NOT NULL,
+  `lote` VARCHAR(10) NOT NULL,
+  `cnpj` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`id`));
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
-);
+-- -----------------------------------------------------
+-- Table `farmacia`.`produto`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`produto` (
+  `id` INT NOT NULL,
+  `descricao` VARCHAR(80) NOT NULL,
+  `validade` DATE NOT NULL,
+  `estoque` INT NOT NULL,
+  `preco` DECIMAL(8,2) NOT NULL,
+  `lote` VARCHAR(10) NULL,
+  `id_laboratorio` INT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `codigo_latoratorio_idx` (`id_laboratorio` ASC) VISIBLE,
+  CONSTRAINT `fk_produto_1`
+    FOREIGN KEY (`id_laboratorio`)
+    REFERENCES `farmacia`.`laboratorio` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
-);
+-- -----------------------------------------------------
+-- Table `farmacia`.`fornecimento`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`fornecimento` (
+  `id` INT NOT NULL,
+  `id_fornecedor` INT NOT NULL,
+  `id_produto` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `codigo_produto_idx` (`id_produto` ASC) VISIBLE,
+  CONSTRAINT `fk_fornecimento_1`
+    FOREIGN KEY (`id_fornecedor`)
+    REFERENCES `farmacia`.`fornecedor` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_fornecimento_2`
+    FOREIGN KEY (`id_produto`)
+    REFERENCES `farmacia`.`produto` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
-);
+-- -----------------------------------------------------
+-- Table `farmacia`.`funcionario`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
+  `id` INT NOT NULL,
+  `nome` VARCHAR(80) NOT NULL,
+  `cargo` ENUM("GERENTE", "EMPREGADO") NOT NULL,
+  PRIMARY KEY (`id`));
+
+-- -----------------------------------------------------
+-- Table `farmacia`.`pedido_compra`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_compra` (
+  `id` INT NOT NULL,
+  `data` DATETIME NOT NULL,
+  `id_funcionario` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `matricula_funcionario_idx` (`id_funcionario` ASC) VISIBLE,
+  CONSTRAINT `fk_pedido_compra_1`
+    FOREIGN KEY (`id_funcionario`)
+    REFERENCES `farmacia`.`funcionario` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
+
+-- -----------------------------------------------------
+-- Table `farmacia`.`item_compra`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`item_compra` (
+  `id` INT NOT NULL,
+  `quantidade` INT NOT NULL,
+  `preco` DECIMAL(8,2) NOT NULL,
+  `id_pedido_compra` INT NOT NULL,
+  `id_fornecimento` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `numero_pedido_idx` (`id_pedido_compra` ASC) VISIBLE,
+  INDEX `codigo_fornecimento_idx` (`id_fornecimento` ASC) VISIBLE,
+  CONSTRAINT `fk_item_compra_1`
+    FOREIGN KEY (`id_pedido_compra`)
+    REFERENCES `farmacia`.`pedido_compra` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_item_compra_2`
+    FOREIGN KEY (`id_fornecimento`)
+    REFERENCES `farmacia`.`fornecimento` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
+
+-- -----------------------------------------------------
+-- Table `farmacia`.`pedido_venda`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
+  `id` INT NOT NULL,
+  `data` DATETIME NOT NULL,
+  `id_funcionario` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_matricula_funcionario_idx` (`id_funcionario` ASC) VISIBLE,
+  CONSTRAINT `fk_pedido_venda_1`
+    FOREIGN KEY (`id_funcionario`)
+    REFERENCES `farmacia`.`funcionario` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
+
+-- -----------------------------------------------------
+-- Table `farmacia`.`item_venda`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
+  `id` INT NOT NULL,
+  `quantidade` INT NOT NULL,
+  `preco` DECIMAL(8,2) NOT NULL,
+  `id_pedido_venda` INT NOT NULL,
+  `id_produto` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `numero_pedido_idx` (`id_pedido_venda` ASC) VISIBLE,
+  INDEX `codigo_produto_idx` (`id_produto` ASC) VISIBLE,
+  CONSTRAINT `fk_item_venda_1`
+    FOREIGN KEY (`id_pedido_venda`)
+    REFERENCES `farmacia`.`pedido_venda` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_item_venda_2`
+    FOREIGN KEY (`id_produto`)
+    REFERENCES `farmacia`.`produto` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
 
 </code>
 
 Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
-
-
 
 
 ### 4.4. Tecnologias
