@@ -72,15 +72,11 @@ Veja um exemplo:
 
 <code>
 
--- -----------------------------------------------------
 -- Schema farmacia
--- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
 USE `farmacia` ;
 
--- -----------------------------------------------------
 -- Table `farmacia`.`fornecedor`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`fornecedor` (
   `id` INT NOT NULL,
   `descricao` VARCHAR(80) NOT NULL,
@@ -92,9 +88,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`fornecedor` (
   `logradouro` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
 
--- -----------------------------------------------------
 -- Table `farmacia`.`laboratorio`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`laboratorio` (
   `id` INT NOT NULL,
   `descricao` VARCHAR(80) NOT NULL,
@@ -102,9 +96,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`laboratorio` (
   `cnpj` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`id`));
 
--- -----------------------------------------------------
 -- Table `farmacia`.`produto`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`produto` (
   `id` INT NOT NULL,
   `descricao` VARCHAR(80) NOT NULL,
@@ -121,9 +113,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`produto` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- -----------------------------------------------------
 -- Table `farmacia`.`fornecimento`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`fornecimento` (
   `id` INT NOT NULL,
   `id_fornecedor` INT NOT NULL,
@@ -141,18 +131,14 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`fornecimento` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- -----------------------------------------------------
 -- Table `farmacia`.`funcionario`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
   `id` INT NOT NULL,
   `nome` VARCHAR(80) NOT NULL,
   `cargo` ENUM("GERENTE", "EMPREGADO") NOT NULL,
   PRIMARY KEY (`id`));
 
--- -----------------------------------------------------
 -- Table `farmacia`.`pedido_compra`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_compra` (
   `id` INT NOT NULL,
   `data` DATETIME NOT NULL,
@@ -165,9 +151,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_compra` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- -----------------------------------------------------
 -- Table `farmacia`.`item_compra`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`item_compra` (
   `id` INT NOT NULL,
   `quantidade` INT NOT NULL,
@@ -188,9 +172,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`item_compra` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- -----------------------------------------------------
 -- Table `farmacia`.`pedido_venda`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
   `id` INT NOT NULL,
   `data` DATETIME NOT NULL,
@@ -203,9 +185,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- -----------------------------------------------------
 -- Table `farmacia`.`item_venda`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
   `id` INT NOT NULL,
   `quantidade` INT NOT NULL,
@@ -225,6 +205,7 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
     REFERENCES `farmacia`.`produto` (`id`)
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
+
 
 </code>
 
