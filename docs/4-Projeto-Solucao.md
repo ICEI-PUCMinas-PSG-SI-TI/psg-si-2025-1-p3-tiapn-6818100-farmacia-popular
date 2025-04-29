@@ -71,7 +71,6 @@ Insira aqui o script de criação das tabelas do banco de dados.
 Veja um exemplo:
 
 <code>
-
 -- Schema farmacia
 CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
 USE `farmacia` ;
@@ -205,8 +204,6 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
     REFERENCES `farmacia`.`produto` (`id`)
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
-
-
 </code>
 
 Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
