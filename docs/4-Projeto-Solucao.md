@@ -73,6 +73,8 @@ Veja um exemplo:
 <code>
 
 -- Schema farmacia
+
+-- Schema farmacia
 CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
 USE `farmacia` ;
 
@@ -92,7 +94,6 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`fornecedor` (
 CREATE TABLE IF NOT EXISTS `farmacia`.`laboratorio` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(80) NOT NULL,
-  `lote` VARCHAR(10) NOT NULL,
   `cnpj` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`id`));
 
@@ -150,14 +151,14 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_compra` (
 
 -- Table `farmacia`.`item_compra`
 CREATE TABLE IF NOT EXISTS `farmacia`.`item_compra` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `quantidade` INT NOT NULL,
-  `preco` DECIMAL(8,2) NOT NULL,
   `id_pedido_compra` INT NOT NULL,
   `id_fornecimento` INT NOT NULL,
-  PRIMARY KEY (`id`),
+  `numero` INT NOT NULL,
+  `quantidade` INT NOT NULL,
+  `preco` DECIMAL(8,2) NOT NULL,
   INDEX `numero_pedido_idx` (`id_pedido_compra` ASC) VISIBLE,
   INDEX `codigo_fornecimento_idx` (`id_fornecimento` ASC) VISIBLE,
+  PRIMARY KEY (`id_pedido_compra`, `id_fornecimento`),
   CONSTRAINT `fk_item_compra_1`
     FOREIGN KEY (`id_pedido_compra`)
     REFERENCES `farmacia`.`pedido_compra` (`id`)
@@ -184,14 +185,14 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
 
 -- Table `farmacia`.`item_venda`
 CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `quantidade` INT NOT NULL,
-  `preco` DECIMAL(8,2) NOT NULL,
   `id_pedido_venda` INT NOT NULL,
   `id_produto` INT NOT NULL,
-  PRIMARY KEY (`id`),
+  `numero` INT NOT NULL,
+  `quantidade` INT NOT NULL,
+  `preco` DECIMAL(8,2) NOT NULL,
   INDEX `numero_pedido_idx` (`id_pedido_venda` ASC) VISIBLE,
   INDEX `codigo_produto_idx` (`id_produto` ASC) VISIBLE,
+  PRIMARY KEY (`id_pedido_venda`, `id_produto`),
   CONSTRAINT `fk_item_venda_1`
     FOREIGN KEY (`id_pedido_venda`)
     REFERENCES `farmacia`.`pedido_venda` (`id`)
