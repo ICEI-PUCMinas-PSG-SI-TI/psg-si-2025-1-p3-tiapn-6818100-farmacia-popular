@@ -4,15 +4,14 @@
 
 ## 4.1. Arquitetura da solução
 
+A arquitetura do sistema é baseada no modelo cliente-servidor e utiliza tecnologias modernas para garantir desempenho, escalabilidade e facilidade de manutenção. O frontend é composto por páginas web desenvolvidas com HTML, CSS e JavaScript, acessadas diretamente pelo navegador. Esse conteúdo estático é hospedado no GitHub Pages, o que facilita o deploy e garante alta disponibilidade. O navegador também faz uso do Local Storage para armazenar dados do usuário e cache de autenticação, proporcionando uma experiência mais fluida e rápida.
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+No backend, a aplicação utiliza o framework FastAPI para expor uma API REST, permitindo a comunicação entre o frontend e o banco de dados. A camada de persistência é gerenciada com SQLAlchemy, que facilita a interação com o banco de dados relacional. O banco de dados utilizado é o MySQL, hospedado na plataforma FreeSQLDatabase, e é acessado exclusivamente pela API, garantindo maior segurança e controle sobre os dados.
 
- Inclua um diagrama da solução e descreva os módulos e as tecnologias
- que fazem parte da solução. Discorra sobre o diagrama.
+Essa estrutura separa claramente as responsabilidades entre as camadas da aplicação, favorecendo a modularidade e a escalabilidade do sistema como um todo.
+
  
- **Exemplo do diagrama de Arquitetura**:
- 
- ![Exemplo de Arquitetura](./images/arquitetura.png)
+ ![Arquitetura do Sistema](./images/arquitetura.png)
  
 
 ### 4.2. Protótipos de telas
