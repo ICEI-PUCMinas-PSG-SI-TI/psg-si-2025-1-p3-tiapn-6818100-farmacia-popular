@@ -78,6 +78,7 @@ Veja um exemplo:
 
 <code>
 
+
 -- Schema farmacia
 CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
 USE `farmacia` ;
@@ -190,28 +191,6 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- Table `farmacia`.`item_venda`
-CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `id_pedido_venda` INT NOT NULL,
-  `id_produto` INT NOT NULL,
-  `numero` INT NOT NULL,
-  `quantidade` INT NOT NULL,
-  `preco` DECIMAL(8,2) NOT NULL,
-  INDEX `numero_pedido_idx` (`id_pedido_venda` ASC) VISIBLE,
-  INDEX `codigo_produto_idx` (`id_produto` ASC) VISIBLE,
-  PRIMARY KEY (`id`),
-  CONSTRAINT `fk_item_venda_1`
-    FOREIGN KEY (`id_pedido_venda`)
-    REFERENCES `farmacia`.`pedido_venda` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_item_venda_2`
-    FOREIGN KEY (`id_produto`)
-    REFERENCES `farmacia`.`produto` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION);
-
 -- Table `farmacia`.`estoque`
 CREATE TABLE IF NOT EXISTS `farmacia`.`estoque` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -224,6 +203,28 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`estoque` (
   CONSTRAINT `fk_estoque_1`
     FOREIGN KEY (`id_produto`)
     REFERENCES `farmacia`.`produto` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION);
+
+-- Table `farmacia`.`item_venda`
+CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `id_pedido_venda` INT NOT NULL,
+  `id_estoque` INT NOT NULL,
+  `numero` INT NOT NULL,
+  `quantidade` INT NOT NULL,
+  `preco` DECIMAL(8,2) NOT NULL,
+  INDEX `numero_pedido_idx` (`id_pedido_venda` ASC) VISIBLE,
+  PRIMARY KEY (`id`),
+  INDEX `fk_item_venda_2_idx` (`id_estoque` ASC) VISIBLE,
+  CONSTRAINT `fk_item_venda_1`
+    FOREIGN KEY (`id_pedido_venda`)
+    REFERENCES `farmacia`.`pedido_venda` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_item_venda_2`
+    FOREIGN KEY (`id_estoque`)
+    REFERENCES `farmacia`.`estoque` (`id`)
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
