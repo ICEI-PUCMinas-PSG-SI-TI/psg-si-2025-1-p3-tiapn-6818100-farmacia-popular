@@ -42,9 +42,26 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 ### 4.3. Modelo de dados
 
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam efetuar os cadastros de dados e controles associados aos processos identificados, assim como recuperações.
-Utilizando a notação do DER (Diagrama Entidade e Relacionamento), elaborem um modelo, na ferramenta visual indicada na disciplina, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar, também, o controle de acesso de usuários (partes interessadas dos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
-_Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos._
+# Tabela de Entidades e Relacionamentos
+
+| Entidade          | Atributos                                                | Relacionamentos                                                                 |
+|-------------------|----------------------------------------------------------|----------------------------------------------------------------------------------|
+| Funcionário       | matrícula, nome, carga                                   | Solicita pedidos de compra e emite pedidos de venda (1:N)                       |
+| Pedido_Compra     | número, data, status, valor_total (derivado)             | Possui itens de compra (1:N)                                                    |
+| Pedido_Venda      | número, data, status, valor_total (derivado)             | Possui itens de venda (1:N)                                                     |
+| Item_Compra       | número, quantidade, preço                                 | Pertence a um pedido de compra (N:1), refere-se a um produto (N:1)              |
+| Item_Venda        | número, quantidade, preço                                 | Pertence a um pedido de venda (N:1), refere-se a um produto (N:1)               |
+| Produto           | código, descrição, preço                                  | Relacionado a itens, estoque, fornecimento e laboratório                        |
+| Estoque           | quantidade, validade, lote                                | Armazena produtos (1:N)                                                         |
+| Fornecedor        | código, descrição, CNPJ, endereço, telefone               | Fornece produtos via fornecimento (1:N)                                         |
+| Fornecimento      | (entidade associativa)                                    | Associação entre Produto e Fornecedor (N:M)                                     |
+| Laboratório       | código, descrição                                         | Fabrica produtos (1:N)                                                          |
+
+**Notas:**
+- O valor total dos pedidos é **derivado** da soma dos itens.
+- O relacionamento **N:M** entre Produto e Fornecedor é resolvido pela entidade associativa **Fornecimento**.
+- Os produtos podem estar associados a **vários estoques** e **vários pedidos**.
+
 
 #### 4.3.1 Modelo ER
 
