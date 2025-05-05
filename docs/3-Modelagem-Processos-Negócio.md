@@ -21,14 +21,20 @@ Desenvolver uma aplicação web voltada para o gerenciamento de uma farmácia po
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 - Gerenciar Produtos](./processos/processo-1-gerenciar-produtos.md "Gerenciar Produtos.")
+[Processo 1 - Cadastrar Usuários](./processos/processo-1-cadastrar-usuarios.md "Cadastrar Usuários.")
 
-[Processo 2 - Realizar Vendas](./processos/processo-2-realizar-vendas.md "Realizar Vendas.")
+[Processo 2 - Gerenciar Usuários](./processos/processo-2-gerenciar-usuarios.md "Gerenciar Usuários.")
 
-[Processo 3 - Gerenciar Fornecedores](./processos/processo-3-gerenciar-fornecedores.md "Gerenciar Fornecedores.")
+[Processo 3 - Cadastrar Produtos](./processos/processo-3-cadastrar-produtos.md "Cadastrar Produtos.")
 
-[Processo 4 - Gerar Relatórios](./processos/processo-4-gerar-relatorios.md "Gerar Relatórios.")
+[Processo 4 - Gerenciar Produtos](./processos/processo-4-gerenciar-produtos.md "Gerenciar Produtos.")
 
-[Processo 5 - Gerenciar Pedidos de Compra](./processos/processo-5-gerenciar-pedidos-de-compra.md "Gerenciar Pedidos de Compra.")
+[Processo 5 - Realizar Vendas](./processos/processo-5-realizar-vendas.md "Realizar Vendas.")
+
+[Processo 6 - Gerenciar Vendas](./processos/processo-6-gerenciar-vendas.md "Gerenciar Vendas.")
+
+[Processo 7 - Relatórios Financeiros](./processos/processo-7-relatorios-financeiros.md "Relatórios Financeiros.")
+
+[Processo 8 - Relatórios de Produtos](./processos/processo-8-relatorios-de-produtos.md "Relatórios de Produtos.")
 
 
