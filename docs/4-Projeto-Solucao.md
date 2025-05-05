@@ -39,18 +39,18 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 # Tabela de Entidades e Relacionamentos
 
-| Entidade          | Atributos                                                | Relacionamentos                                                                 |
+| Entidade          | Atributos                                                | Relacionamentos                                                                  |
 |-------------------|----------------------------------------------------------|----------------------------------------------------------------------------------|
-| Funcionário       | matrícula, nome, carga                                   | Solicita pedidos de compra e emite pedidos de venda (1:N)                       |
-| Pedido_Compra     | número, data, status, valor_total (derivado)             | Possui itens de compra (1:N)                                                    |
-| Pedido_Venda      | número, data, status, valor_total (derivado)             | Possui itens de venda (1:N)                                                     |
-| Item_Compra       | número, quantidade, preço                                 | Pertence a um pedido de compra (N:1), refere-se a um produto (N:1)              |
-| Item_Venda        | número, quantidade, preço                                 | Pertence a um pedido de venda (N:1), refere-se a um produto (N:1)               |
-| Produto           | código, descrição, preço                                  | Relacionado a itens, estoque, fornecimento e laboratório                        |
-| Estoque           | quantidade, validade, lote                                | Armazena produtos (1:N)                                                         |
-| Fornecedor        | código, descrição, CNPJ, endereço, telefone               | Fornece produtos via fornecimento (1:N)                                         |
-| Fornecimento      | (entidade associativa)                                    | Associação entre Produto e Fornecedor (N:M)                                     |
-| Laboratório       | código, descrição                                         | Fabrica produtos (1:N)                                                          |
+| Funcionário       | matrícula, nome, cargo, senha, ativo                     | Solicita pedidos de compra e emite pedidos de venda (1:N)                        |
+| Pedido_Compra     | número, data, valor_total (derivado)                     | Possui itens de compra (1:N)                                                     |
+| Pedido_Venda      | número, data, valor_total (derivado)                     | Possui itens de venda (1:N)                                                      |
+| Item_Compra       | número, quantidade, preço                                | Pertence a um pedido de compra (N:1), refere-se a um produto (N:1)              |
+| Item_Venda        | número, quantidade, preço                                | Pertence a um pedido de venda (N:1), refere-se a um produto (N:1)               |
+| Produto           | código, descrição, preço                                 | Relacionado a itens, estoque, fornecimento e laboratório                        |
+| Estoque           | quantidade, validade, lote                               | Armazena produtos (1:N)                                                         |
+| Fornecedor        | código, descrição, CNPJ, email, telefone, endereço       | Fornece produtos via fornecimento (1:N)                                         |
+| Fornecimento      | (entidade associativa)                                   | Associação entre Produto e Fornecedor (N:M)                                     |
+| Laboratório       | código, descrição, CNPJ                                  | Fabrica produtos (1:N)                                                          |
 
 **Notas:**
 - O valor total dos pedidos é **derivado** da soma dos itens.
@@ -78,6 +78,7 @@ Veja um exemplo:
 
 <code>
 
+-- Schema farmacia
 
 -- Schema farmacia
 CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
@@ -88,12 +89,16 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`fornecedor` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(80) NOT NULL,
   `cnpj` VARCHAR(20) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
   `telefone` VARCHAR(11) NOT NULL,
   `estado` CHAR(2) NULL,
   `cidade` VARCHAR(45) NULL,
   `bairro` VARCHAR(45) NULL,
   `logradouro` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`));
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `cnpj_UNIQUE` (`cnpj` ASC) VISIBLE,
+  UNIQUE INDEX `descricao_UNIQUE` (`descricao` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
 
 -- Table `farmacia`.`laboratorio`
 CREATE TABLE IF NOT EXISTS `farmacia`.`laboratorio` (
@@ -139,14 +144,16 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(80) NOT NULL,
   `cargo` ENUM("GERENTE", "EMPREGADO") NOT NULL,
-  PRIMARY KEY (`id`));
+  `senha` CHAR(8) NOT NULL,
+  `ativo` ENUM("SIM", "NAO") NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE);
 
 -- Table `farmacia`.`pedido_compra`
 CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_compra` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `data` DATETIME NOT NULL,
   `id_funcionario` INT NOT NULL,
-  `status` TINYINT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `matricula_funcionario_idx` (`id_funcionario` ASC) VISIBLE,
   CONSTRAINT `fk_pedido_compra_1`
@@ -182,7 +189,6 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `data` DATETIME NOT NULL,
   `id_funcionario` INT NOT NULL,
-  `status` TINYINT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_matricula_funcionario_idx` (`id_funcionario` ASC) VISIBLE,
   CONSTRAINT `fk_pedido_venda_1`
