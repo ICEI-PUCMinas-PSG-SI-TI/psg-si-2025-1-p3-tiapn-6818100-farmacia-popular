@@ -1,6 +1,6 @@
 ### 3.3.5 Processo 5 – REALIZAR VENDAS
 
-O cliente solicita um produto e quantidade desejada, o funcionário acessa o sistema, seleciona opção "Realizar Vendas", consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. O cliente pode solicitar mais itens, que serão incluídos no carrinho pelo funcionário. Em seguida o carrinho é finalizado, é gerado número de pedido e os dados são armazenados no banco de dados. Se o carrinho estiver vazio, o processo é será encerrado.
+O cliente solicita um produto e quantidade desejada, o funcionário acessa o sistema, seleciona opção "Realizar Vendas", consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. O cliente pode solicitar mais itens, que serão incluídos no carrinho pelo funcionário. Em seguida o carrinho é finalizado, é gerado o número do pedido e ós dados são armazenados no banco de dados. Se o carrinho estiver vazio, o processo é será encerrado.
 
 O funcionário separa os produtos, o cliente realiza o pagamento e os produtos são entregues. O sistema **não** irá gerenciar pagamento.
 
