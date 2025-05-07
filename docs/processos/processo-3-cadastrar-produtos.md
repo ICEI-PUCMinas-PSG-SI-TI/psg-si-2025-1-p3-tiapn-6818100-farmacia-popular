@@ -63,7 +63,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| [Produtos]           | Clicar em Adiconar Produto | default  |
+| [Produtos]           | Clicar em Adicionar Produto | default  |
 
 
 **Atividade 3 - Clicar em Adicionar Produto**
