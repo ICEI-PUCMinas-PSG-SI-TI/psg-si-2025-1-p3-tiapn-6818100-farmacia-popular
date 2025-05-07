@@ -41,31 +41,25 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Atividade 1 - Acessar o Sistema**
 
+| **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
+| ---             | ---              | ---                 | ---               |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | Não se aplica     |
+| [Senha]         | [Caixa de Texto] | Gerada pelo sistema | Não se aplica     |
+
+| **Comandos**    |  **Destino**                   | **Tipo**                 |
+| ---             | ---                            | ---                      |
+| [Entrar]        | Início do processo             | (default/cancel/  )      |
+
+
+**Atividade 2 - Selecionar Cadastrar Usuário**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
-
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
-
-
-**Nome da atividade 2**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
+| [Não se aplica] | [Não se aplica]  |                |                   |
 |                 |                  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Cadastrar Usuário]  | Informar dados do usuário      | (default/cancel/  ) |
+|                      |                                |                     |
