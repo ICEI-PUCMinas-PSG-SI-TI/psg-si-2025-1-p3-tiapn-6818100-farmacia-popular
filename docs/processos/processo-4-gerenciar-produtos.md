@@ -72,7 +72,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| [Editar Produto]     | Informar dados do usuário      | default  |
+| [Editar Produto]     | Informar dados do produto      | default  |
 
 
 **Atividade 4 - Informar Dados do Produto**
@@ -88,6 +88,6 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
 | [Confirmar]          | Fim do Processo                |  default            |
-| [Excluir Usuário]    | Fim do Processo                |  Botão              |
+| [Excluir Produto]    | Fim do Processo                |  Botão              |
 | [Cancelar]           | Fim do Processo                |  cancelar           |
 
