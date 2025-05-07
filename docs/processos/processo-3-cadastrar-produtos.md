@@ -43,31 +43,50 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
 
+**Atividade 1 - Acessar o Sistema**
+
+| **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
+| ---             | ---              | ---                 | ---               |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | ---     |
+| [Senha]         | [Caixa de Texto] | --- | ---     |
+
+| **Comandos**    |  **Destino**     | **Tipo**                 |
+| ---             | ---              | ---                      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
+
+
+**Atividade 2 - Selecionar Opção Produtos**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| [Não se aplica] | [Não se aplica]  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Produtos]           | Clicar em Adiconar Produto | default  |
 
 
-**Nome da atividade 2**
-
+**Atividade 3 - Clicar em Adicionar Produto**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| [Não se aplica] | [Não se aplica]  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Adicionar Usuário]  | Informar dados do produto      | Botão |
+
+
+**Atividade 4 - Informar Dados do Produto**
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| [Descrição]          | [Caixa de Texto] | Não pode ser vazio |                   |
+| [Validade]         | [Data]  | Não pode ser inferior à data atual | --- |
+| [Preço]         | [Número] | Não poder negativo | --- |
+| [Estoque]       | [Número]  | --- | --- |
+| [Lote]       | [Caixa de Texto]  | --- | --- |
+| [Laboratório]       | [Caixa de Texto]  | --- | --- |
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Cadastrar]          | Fim do Processo                |  default            |
+| [Cancelar]           | Fim do Processo                |  cancelar           |
