@@ -56,17 +56,17 @@ _* **Tabela** - campo formado por uma matriz de valores_
 **Atividade 2 - Selecionar Opção Usuários**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Não se aplica] | [Não se aplica]  |                |                   |
+| ---             | ---              |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
 | [Usuários]           | Adicionar Usuário      | default  |
 
 
-**Atividade 2 - Clicar em Adicionar Usuário **
+**Atividade 3 - Clicar em Adicionar Usuário**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Não se aplica] | [Não se aplica]  |                |                   |
+| ---             | ---              |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
