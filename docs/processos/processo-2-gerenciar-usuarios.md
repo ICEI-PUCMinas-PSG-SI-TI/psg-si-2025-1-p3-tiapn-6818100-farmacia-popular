@@ -1,12 +1,12 @@
 ### 3.3.2 Processo 2 – GERENCIAR USUÁRIOS
 
-O processo se inicia com um gerente acessando o sistema e selecionando a opção "Gerenciar Usuários", em seguida pesquisa o usuário desejado na lista informada pelo sistema, clica em editar, o sistema exibe os dados do usuário permitindo alteração. Os campos disponíveis são:
+O processo se inicia com um gerente acessando o sistema e selecionando a opção "Usuários", em seguida pesquisa o usuário desejado na lista informada pelo sistema, clica em editar, o sistema exibe os dados do usuário permitindo alteração. Os campos disponíveis são:
 * Nome
 * Cargo
 * Senha
 * Status: ativo (valor padrão) ou inativo
 
-O gerente atualiza os dados, clica em confirmar, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso escolha a opção cancelar, o processo finaliza sem alterar dados no sistema.
+O gerete pode atualizar os dados e em seguida clicar em confirmar, ou remover o usuário clicando em excluir. O sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso escolha a opção cancelar, o processo finaliza sem alterar dados no sistema.
 
 ![Gerenciar Usuários](../images/02-gerenciar-usuarios.png "Gerenciar Usuários.")
 
