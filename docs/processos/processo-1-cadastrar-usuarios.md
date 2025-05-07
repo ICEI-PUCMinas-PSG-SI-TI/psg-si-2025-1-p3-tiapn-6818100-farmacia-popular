@@ -1,6 +1,6 @@
 ### 3.3.1 Processo 1 – CADASTRAR USUÁRIOS
 
-O processo se inicia com um gerente acessando o sistema e selecionando a opção "Cadastrar Usuários", em seguida informa os dados do novo usuário:
+O processo se inicia com um gerente acessando o sistema e selecionando a opção "Usuários", em seguida clica em adicionar usuário e depois informa os dados:
 * Nome
 * Cargo
 * Senha
