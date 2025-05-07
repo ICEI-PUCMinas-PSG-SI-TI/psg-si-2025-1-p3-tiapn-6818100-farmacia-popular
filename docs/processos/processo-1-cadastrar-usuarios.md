@@ -45,25 +45,35 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
 | ---             | ---              | ---                 | ---               |
-| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | Não se aplica     |
-| [Senha]         | [Caixa de Texto] | Não se aplica | Não se aplica     |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | ---     |
+| [Senha]         | [Caixa de Texto] | --- | ---     |
 
 | **Comandos**    |  **Destino**     | **Tipo**                 |
 | ---             | ---              | ---                      |
 | [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
 
 
-**Atividade 2 - Selecionar Cadastrar Usuário**
+**Atividade 2 - Selecionar Opção Usuários**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Não se aplica] | [Não se aplica]  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| [Cadastrar Usuário]  | Informar dados do usuário      | default  |
+| [Usuários]           | Adicionar Usuário      | default  |
 
 
-**Atividade 3 - Informar Dados do Usuário**
+**Atividade 2 - Clicar em Adicionar Usuário **
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| [Não se aplica] | [Não se aplica]  |                |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Adicionar Usuário]  | Informar dados do usuário      | default  |
+
+
+**Atividade 4 - Informar Dados do Usuário**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome]          | [Caixa de Texto] | Não pode ser vazio |                   |
