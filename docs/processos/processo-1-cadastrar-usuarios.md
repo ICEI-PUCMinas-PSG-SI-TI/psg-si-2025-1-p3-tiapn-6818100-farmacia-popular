@@ -50,7 +50,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Comandos**    |  **Destino**     | **Tipo**                 |
 | ---             | ---              | ---                      |
-| [Entrar]        | Tela Inicial (Selecionar processo)     | (default/cancel/  )      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
 
 
 **Atividade 2 - Selecionar Cadastrar Usuário**
