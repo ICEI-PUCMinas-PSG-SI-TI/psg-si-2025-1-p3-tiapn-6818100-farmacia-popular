@@ -46,20 +46,33 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
 | ---             | ---              | ---                 | ---               |
 | [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | Não se aplica     |
-| [Senha]         | [Caixa de Texto] | Gerada pelo sistema | Não se aplica     |
+| [Senha]         | [Caixa de Texto] | Não se aplica | Não se aplica     |
 
-| **Comandos**    |  **Destino**                   | **Tipo**                 |
-| ---             | ---                            | ---                      |
-| [Entrar]        | Início do processo             | (default/cancel/  )      |
+| **Comandos**    |  **Destino**     | **Tipo**                 |
+| ---             | ---              | ---                      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | (default/cancel/  )      |
 
 
 **Atividade 2 - Selecionar Cadastrar Usuário**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Não se aplica] | [Não se aplica]  |                |                   |
-|                 |                  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
 | [Cadastrar Usuário]  | Informar dados do usuário      | (default/cancel/  ) |
-|                      |                                |                     |
+
+
+**Atividade 3 - Informar Dados do Usuário**
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| [Nome]          | [Caixa de Texto] | Não pode ser vazio |                   |
+| [Cargo]         | [Seleção Única]  | Gerente, Funcionário | Funcionário |
+| [Senha]         | [Caixa de Texto] | 8 caracteres | Não se aplica |
+| [Ativo]         | [Seleção Única]  | Sim, Não | Sim |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Cadastrar]          | Fim do Processo                |  default            |
+| [Cancelar]           |                                |  cancelar           |
