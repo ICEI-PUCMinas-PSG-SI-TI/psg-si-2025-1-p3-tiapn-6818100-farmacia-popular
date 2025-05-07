@@ -75,4 +75,4 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
 | [Cadastrar]          | Fim do Processo                |  default            |
-| [Cancelar]           |                                |  cancelar           |
+| [Cancelar]           | Fim do Processo                |  cancelar           |
