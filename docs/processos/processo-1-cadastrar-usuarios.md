@@ -60,7 +60,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| [Cadastrar Usuário]  | Informar dados do usuário      | (default/cancel/  ) |
+| [Cadastrar Usuário]  | Informar dados do usuário      | default  |
 
 
 **Atividade 3 - Informar Dados do Usuário**
