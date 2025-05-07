@@ -1,6 +1,6 @@
 ### 3.3.3 Processo 3 – CADASTRAR PRODUTOS
 
-O processo se inicia com um funcionário (ou gerente) acessando o sistema, selecionando a opção "Produtos", em seguida clica em adicionar produto depois informa os dados:
+O processo se inicia com um funcionário (ou gerente) acessando o sistema, selecionando a opção "Produtos", em seguida clica em adicionar produto e depois informa os dados:
 * Descrição
 * Preço
 * Quantidade
