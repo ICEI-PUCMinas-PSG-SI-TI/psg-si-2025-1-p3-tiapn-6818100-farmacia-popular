@@ -41,31 +41,49 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Atividade 1 - Acessar o Sistema**
 
+| **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
+| ---             | ---              | ---                 | ---               |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | ---     |
+| [Senha]         | [Caixa de Texto] | --- | ---     |
+
+| **Comandos**    |  **Destino**     | **Tipo**                 |
+| ---             | ---              | ---                      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
+
+
+**Atividade 2 - Selecionar Opção Usuários**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| [Não se aplica] | [Não se aplica]  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Usuários]           | Adicionar Usuário      | default  |
 
 
-**Nome da atividade 2**
-
+**Atividade 3 - Clicar em Editar Usuário (Lápis) **
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| [Não se aplica] | [Não se aplica]  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Adicionar Usuário]  | Informar dados do usuário      | default  |
+
+
+**Atividade 4 - Informar Dados do Usuário**
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| [Nome]          | [Caixa de Texto] | Não pode ser vazio |                   |
+| [Cargo]         | [Seleção Única]  | Gerente, Funcionário | Funcionário |
+| [Senha]         | [Caixa de Texto] | 8 caracteres | Não se aplica |
+| [Ativo]         | [Seleção Única]  | Sim, Não | Sim |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Confirmar]          | Fim do Processo                |  default            |
+| [Excluir Usuário]    | Fim do Processo                |  default            |
+| [Cancelar]           | Fim do Processo                |  cancelar           |
