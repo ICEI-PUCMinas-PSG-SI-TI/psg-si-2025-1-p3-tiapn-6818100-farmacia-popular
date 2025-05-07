@@ -63,7 +63,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | [Usuários]           | Adicionar Usuário      | default  |
 
 
-**Atividade 3 - Clicar em Editar Usuário (Lápis) **
+**Atividade 3 - Clicar em Editar Usuário (Lápis)**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Não se aplica] | [Não se aplica]  |                |                   |
