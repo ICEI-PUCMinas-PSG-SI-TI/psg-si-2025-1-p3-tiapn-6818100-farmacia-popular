@@ -8,7 +8,7 @@ O processo se inicia com um funcionário (ou gerente) acessando o sistema e sele
 * Validade
 * Laboratório
 
-O funcionário atualiza os dados, clica em confirmar, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso escolha a opção cancelar, o processo finaliza sem alterar dados no sistema.
+O funcionário pode atualizar os dados e em seguida clicar em confirmar, ou remover o produto clicando em excluir. O sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso escolha a opção cancelar, o processo finaliza sem alterar dados no sistema.
 
 ![Gerenciar Produtos](../images/04-gerenciar-produtos.png "Gerenciar Produtos.")
 
