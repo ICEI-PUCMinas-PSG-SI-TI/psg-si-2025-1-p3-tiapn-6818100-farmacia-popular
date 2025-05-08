@@ -59,23 +59,13 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | [Vendas]           | Incluir Itens | default  |
 
 
-**Atividade 3 - Clicar em Adicionar Produto**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo**            |
-| ---                  | ---                            | ---                 |
-| [Adicionar Produto]  | Incluir Itens                  | Botão |
-
-
-**Atividade 4 - Incluir Itens**
+**Atividade 3 - Incluir Itens**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
 | [Pesquisar Produto]  | ---                            |  Caixa de Pesquisa  |
-| [Adicionar Produto]  | ---                            |  default            |
+| [Adicionar Ao Carrinho]  | Incluir Itens                  | Botão |
 | [Finalizar]          | Fim do Processo                |  default           |
 | [Cancelar]           | Fim do Processo                |  cancelar           |
