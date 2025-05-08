@@ -1,8 +1,8 @@
 ### 3.3.5 Processo 5 – REALIZAR VENDAS
 
-O cliente solicita um produto e quantidade desejada, o funcionário acessa o sistema, seleciona opção "Realizar Vendas", consulta a disponibilidade do item no estoque e apresenta o valor caso seja encontrado. Se o cliente optar pela compra, o item é incluído no carrinho de compras. O cliente pode solicitar mais itens, que serão incluídos no carrinho pelo funcionário. Em seguida o carrinho é finalizado, é gerado o número do pedido e ós dados são armazenados no banco de dados. Se o carrinho estiver vazio, o processo é será encerrado.
+O cliente solicita um produto e a quantidade desejada, o funcionário acessa o sistema, seleciona opção "Vendas", consulta a disponibilidade do item no estoque e apresenta o valor caso o item seja encontrado. Se o cliente optar pela compra, o produto é incluído no carrinho. O cliente pode solicitar mais produtos, que serão incluídos no pedido. Em seguida o carrinho é finalizado, é gerado o número do pedido e os dados são armazenados no banco de dados. Se o carrinho estiver vazio, o processo é encerrado.
 
-O funcionário separa os produtos, o cliente realiza o pagamento e os produtos são entregues. O sistema **não** irá gerenciar pagamento.
+O funcionário separa os itens, o cliente realiza o pagamento e os produtos são entregues. O sistema **não** irá gerenciar pagamento.
 
 ![Realizar Vendas](../images/05-realizar-vendas.png "Realizar Vendas.")
 
@@ -37,31 +37,45 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Atividade 1 - Acessar o Sistema**
 
+| **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
+| ---             | ---              | ---                 | ---               |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | ---     |
+| [Senha]         | [Caixa de Texto] | --- | ---     |
+
+| **Comandos**    |  **Destino**     | **Tipo**                 |
+| ---             | ---              | ---                      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
+
+
+**Atividade 2 - Selecionar Opção Vendas**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| --- | ---  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Vendas]           | Incluir Itens | default  |
 
 
-**Nome da atividade 2**
-
+**Atividade 3 - Clicar em Adicionar Produto**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| --- | ---  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Adicionar Produto]  | Incluir Itens                  | Botão |
+
+
+**Atividade 4 - Incluir Itens**
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Pesquisar Prodotu]  | ---                            |  Caixa de Pesquisa  |
+| [Adicionar Produto]  | ---                            |  default            |
+| [Finalizar]          | Fim do Processo                |  default           |
+| [Cancelar]           | Fim do Processo                |  cancelar           |
