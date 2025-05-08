@@ -1,11 +1,11 @@
 ### 3.3.6 Processo 6 – GERENCIAR VENDAS
 
-O processo se inicia com um gerente acessando o sistema e selecionando a opção "Gerenciar Vendas", em seguida pesquisa a venda desejado na lista informada pelo sistema (ordenação por data e hora mais recentes), seleciona a venda desejada, clica em editar, o sistema exibe os dados e permite:
+O processo se inicia com um gerente acessando o sistema e selecionando a opção "Vendas", em seguida pesquisa a venda desejada na lista exibida pelo sistema (ordenação por data e hora mais recentes), seleciona o item desejado e clica em editar. O sistema exibe os dados e permite:
 * Incluir de itens;
 * Excluir de itens;
-* Excluir o pedido;
+* Excluir a venda (pedido);
 
-O gerente atualiza os dados, clica em confirmar, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso escolha a opção cancelar, o processo finaliza sem alterar dados no sistema.
+O gerente atualiza os dados e clica em confirmar. O sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso o gerente escolha a opção cancelar, o processo é encerrado sem alterar dados no sistema.
 
 ![Gerenciar Vendas](../images/06-gerenciar-vendas.png "Gerenciar Vendas.")
 
