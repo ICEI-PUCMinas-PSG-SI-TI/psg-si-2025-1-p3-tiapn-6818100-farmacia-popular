@@ -75,7 +75,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| [Pesquisar Prodotu]  | ---                            |  Caixa de Pesquisa  |
+| [Pesquisar Produto]  | ---                            |  Caixa de Pesquisa  |
 | [Adicionar Produto]  | ---                            |  default            |
 | [Finalizar]          | Fim do Processo                |  default           |
 | [Cancelar]           | Fim do Processo                |  cancelar           |
