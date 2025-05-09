@@ -73,7 +73,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | [Consultar Histórico]| Histórico de Vendas |  Botão  |
 
 
-**Atividade 4 - Consultar Histórico**
+**Atividade 4 - Alterar Pedido**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 
