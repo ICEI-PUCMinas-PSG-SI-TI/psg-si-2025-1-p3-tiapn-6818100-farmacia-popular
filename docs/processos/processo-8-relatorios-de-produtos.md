@@ -8,7 +8,7 @@ O funcionário deve informar quantidade mínima caso selecione o relatório de q
 
 Em seguida o empregado deve confirmar a ação desejada, o sistema pesquisa as informações no banco de dados, gera o relatório e exibe na tela e o processo é finalizado. Caso escolha a opção cancelar, o processo é finalizado.
 
-![Relatórios de Produtos](../images/08-relatorios-de-produtos.png "Relatórios de Produtos.")
+![Relatórios de Produtos](../images/08-relatorios-produtos.png "Relatórios de Produtos.")
 
 #### Detalhamento das atividades
 
