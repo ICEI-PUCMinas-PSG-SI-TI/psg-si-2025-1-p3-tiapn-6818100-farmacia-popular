@@ -62,11 +62,11 @@ _Descrição da tela relativa à atividade 2._
 
  Descrição da tela relativa à atividade 2._
 
-[`Tela da atividade 2`](images/wr-produtos.png)
+[`Tela da atividade 3`](images/wr-produtos.png)
 
 Descrição da tela relativa à atividade 4._
 
-[`Tela da atividade 3`](images/wr-cadastrar-produto.png)
+[`Tela da atividade 4`](images/wr-cadastrar-produto.png)
 
 
 ## 6.5. Telas do processo 4
