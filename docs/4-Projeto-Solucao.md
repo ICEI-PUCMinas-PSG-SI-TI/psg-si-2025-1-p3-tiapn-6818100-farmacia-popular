@@ -17,14 +17,13 @@ Essa estrutura separa claramente as responsabilidades entre as camadas da aplica
 ### 4.2. Protótipos de telas
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
-![Tela de login](images/login.png)
-![Tela de editar produto](images/editar.png)
-![Tela do carrinho](images/carrinho.png)
-![Tela de visualização dos fornecedores](images/fornecedores.png)
-![Tela de cadastrar pedido](images/cadastro-pedido.png)
-![Tela de gerenciar pedido](images/gerenciar-pedido.png)
-
+PRINCIPAIS TELAS
+![Tela de login](images/wr-login.png)
+![Tela inicial](images/wr-inicial.png)
+![Tela de usuarios](images/wr-usuarios.png)
+![Tela do produto](images/wr-produtos.png)
+![Tela de vendas](images/wr-venda.png)
+![Tela relatorio](images/wr-relatorio-financeiro.png)
 
 ## Diagrama de Classes
 
