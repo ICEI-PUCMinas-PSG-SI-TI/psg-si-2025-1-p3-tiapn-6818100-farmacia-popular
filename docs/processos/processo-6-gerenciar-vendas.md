@@ -1,6 +1,6 @@
 ### 3.3.6 Processo 6 – GERENCIAR VENDAS
 
-Este processo tem o objetivo de alterar um pedido já finalizado em situações, como por exemplo, (i) em que o pedido já foi finalizado, mas o cliente não deseja mais levar algum item, (ii) devolução de algum item, (iii) excluir o pedido completo etc.
+Este processo tem o objetivo de alterar um pedido já finalizado em situações, como por exemplo, (i) em que o cliente não deseja mais levar algum item, (ii) devolução de algum item, (iii) excluir o pedido completo etc.
 
 O processo se inicia com um gerente acessando o sistema e selecionando a opção "Vendas", em seguida consulta o histórico, clica no pedido a ser editado ou excluído. Os pedidos são ordenados por data e hora mais recentes. O sistema permite:
 * Incluir de itens;
