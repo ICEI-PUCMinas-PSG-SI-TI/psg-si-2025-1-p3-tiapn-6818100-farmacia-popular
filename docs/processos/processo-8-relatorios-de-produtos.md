@@ -1,4 +1,4 @@
-### 3.3.8 Processo 48– RELATÓRIOS DE PRODUTOS
+### 3.3.8 Processo 8– RELATÓRIOS DE PRODUTOS
 
 O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios de Produtos", em seguida escolhe o tipo desejado na próxima tela:
 * Produtos com quantidade igual ou inferior;
