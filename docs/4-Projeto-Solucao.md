@@ -78,66 +78,20 @@ Veja um exemplo:
 
 <code>
 
--- Schema farmacia
-
--- Schema farmacia
+ -- Schema farmacia
 CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
 USE `farmacia` ;
-
--- Table `farmacia`.`fornecedor`
-CREATE TABLE IF NOT EXISTS `farmacia`.`fornecedor` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `descricao` VARCHAR(80) NOT NULL,
-  `cnpj` VARCHAR(20) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  `telefone` VARCHAR(11) NOT NULL,
-  `estado` CHAR(2) NULL,
-  `cidade` VARCHAR(45) NULL,
-  `bairro` VARCHAR(45) NULL,
-  `logradouro` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `cnpj_UNIQUE` (`cnpj` ASC) VISIBLE,
-  UNIQUE INDEX `descricao_UNIQUE` (`descricao` ASC) VISIBLE,
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
-
--- Table `farmacia`.`laboratorio`
-CREATE TABLE IF NOT EXISTS `farmacia`.`laboratorio` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `descricao` VARCHAR(80) NOT NULL,
-  `cnpj` VARCHAR(20) NOT NULL,
-  PRIMARY KEY (`id`));
 
 -- Table `farmacia`.`produto`
 CREATE TABLE IF NOT EXISTS `farmacia`.`produto` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(80) NOT NULL,
   `preco` DECIMAL(8,2) NOT NULL,
-  `id_laboratorio` INT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_produto_1_idx` (`id_laboratorio` ASC) VISIBLE,
-  CONSTRAINT `fk_produto_1`
-    FOREIGN KEY (`id_laboratorio`)
-    REFERENCES `farmacia`.`laboratorio` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION);
-
--- Table `farmacia`.`fornecimento`
-CREATE TABLE IF NOT EXISTS `farmacia`.`fornecimento` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `id_fornecedor` INT NOT NULL,
-  `id_produto` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `codigo_produto_idx` (`id_produto` ASC) VISIBLE,
-  CONSTRAINT `fk_fornecimento_1`
-    FOREIGN KEY (`id_fornecedor`)
-    REFERENCES `farmacia`.`fornecedor` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_fornecimento_2`
-    FOREIGN KEY (`id_produto`)
-    REFERENCES `farmacia`.`produto` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION);
+  `quantidade` INT NOT NULL,
+  `validade` DATE NOT NULL,
+  `lote` VARCHAR(45) NULL,
+  `laboratorio` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
 
 -- Table `farmacia`.`funcionario`
 CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
@@ -148,41 +102,6 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
   `ativo` ENUM("SIM", "NAO") NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE);
-
--- Table `farmacia`.`pedido_compra`
-CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_compra` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `data` DATETIME NOT NULL,
-  `id_funcionario` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `matricula_funcionario_idx` (`id_funcionario` ASC) VISIBLE,
-  CONSTRAINT `fk_pedido_compra_1`
-    FOREIGN KEY (`id_funcionario`)
-    REFERENCES `farmacia`.`funcionario` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION);
-
--- Table `farmacia`.`item_compra`
-CREATE TABLE IF NOT EXISTS `farmacia`.`item_compra` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `id_pedido_compra` INT NOT NULL,
-  `id_fornecimento` INT NOT NULL,
-  `numero` INT NOT NULL,
-  `quantidade` INT NOT NULL,
-  `preco` DECIMAL(8,2) NOT NULL,
-  INDEX `numero_pedido_idx` (`id_pedido_compra` ASC) VISIBLE,
-  INDEX `codigo_fornecimento_idx` (`id_fornecimento` ASC) VISIBLE,
-  PRIMARY KEY (`id`),
-  CONSTRAINT `fk_item_compra_1`
-    FOREIGN KEY (`id_pedido_compra`)
-    REFERENCES `farmacia`.`pedido_compra` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_item_compra_2`
-    FOREIGN KEY (`id_fornecimento`)
-    REFERENCES `farmacia`.`fornecimento` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION);
 
 -- Table `farmacia`.`pedido_venda`
 CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
@@ -197,41 +116,26 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
--- Table `farmacia`.`estoque`
-CREATE TABLE IF NOT EXISTS `farmacia`.`estoque` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `quantidade` INT NOT NULL,
-  `validade` DATE NOT NULL,
-  `lote` VARCHAR(20) NULL,
-  `id_produto` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_estoque_1_idx` (`id_produto` ASC) VISIBLE,
-  CONSTRAINT `fk_estoque_1`
-    FOREIGN KEY (`id_produto`)
-    REFERENCES `farmacia`.`produto` (`id`)
-    ON DELETE RESTRICT
-    ON UPDATE NO ACTION);
-
 -- Table `farmacia`.`item_venda`
 CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `id_pedido_venda` INT NOT NULL,
-  `id_estoque` INT NOT NULL,
+  `id_produto` INT NOT NULL,
   `numero` INT NOT NULL,
   `quantidade` INT NOT NULL,
   `preco` DECIMAL(8,2) NOT NULL,
   INDEX `numero_pedido_idx` (`id_pedido_venda` ASC) VISIBLE,
   PRIMARY KEY (`id`),
-  INDEX `fk_item_venda_2_idx` (`id_estoque` ASC) VISIBLE,
+  INDEX `fk_item_venda_2_idx` (`id_produto` ASC) VISIBLE,
   CONSTRAINT `fk_item_venda_1`
     FOREIGN KEY (`id_pedido_venda`)
     REFERENCES `farmacia`.`pedido_venda` (`id`)
     ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_item_venda_2`
-    FOREIGN KEY (`id_estoque`)
-    REFERENCES `farmacia`.`estoque` (`id`)
-    ON DELETE RESTRICT
+    FOREIGN KEY (`id_produto`)
+    REFERENCES `farmacia`.`produto` (`id`)
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 </code>
