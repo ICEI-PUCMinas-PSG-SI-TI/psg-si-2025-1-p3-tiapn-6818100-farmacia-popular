@@ -41,32 +41,32 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Atividade 1 - Acessar o Sistema**
 
+| **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
+| ---             | ---              | ---                 | ---               |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | ---     |
+| [Senha]         | [Caixa de Texto] | --- | ---     |
+
+| **Comandos**    |  **Destino**     | **Tipo**                 |
+| ---             | ---              | ---                      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
+
+
+**Atividade 2 - Selecionar Opção Relatório de Estoque**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| --- | ---  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| **Comandos**           | **Destino**                  | **Tipo**            |
+|------------------------|------------------------------| ---                 |
+| [Relatório de Estoque] | Tela de Relatório de Estoque | default  |
 
+**Atividade 3 - Inserir termos para gerar o relatório em tempo real**
+| **Campo**| **Tipo**| **Restrições** | **Valor default** |
+| [inicio]| [caixa de texto]| num|6 meses atrás|
+| [fim]| [caixa de texto] |num|data atual|
 
-**Nome da atividade 2**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
-
+| **Comandos** |  **Destino**                   | **Tipo**           |
+|------------| ---                            | ---                 |
+|            |  |  |
