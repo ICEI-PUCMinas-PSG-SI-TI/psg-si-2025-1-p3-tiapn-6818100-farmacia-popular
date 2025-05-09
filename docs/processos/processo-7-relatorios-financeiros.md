@@ -4,7 +4,7 @@ O funcionário (ou gerente) acessa o sistema e clica na opção "Relatórios Fin
 * Vendas por período;
 * Faturamento por período;
 
-Caso não seja informado, será considerado a data atual. Em seguida o empregado deve confirmar a ação desejada, o sistema pesquisa as informações no banco de dados, gera o relatório, exibe os dados na tela e o processo é finalizado. Caso escolha a opção cancelar, o processo é finalizado.
+Caso o período não seja informado, será considerada a data atual. Em seguida o empregado deve confirmar a ação desejada, o sistema pesquisa as informações no banco de dados, gera o relatório, exibe os dados na tela e o processo é finalizado. Caso escolha a opção cancelar, o processo é finalizado.
 
 ![Relatórios Financeiros](../images/07-relatorios-financeiros.png "Relatórios Financeiros.")
 
