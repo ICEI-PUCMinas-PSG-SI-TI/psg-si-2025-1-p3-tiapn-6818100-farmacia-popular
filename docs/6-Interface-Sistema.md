@@ -24,11 +24,11 @@ _Descrição da tela relativa à atividade 2._
 
 _Descrição da tela relativa à atividade 3._
 
-[`Tela da atividade 2`](images/wr-usuarios.png)
+[`Tela da atividade 3`](images/wr-usuarios.png)
 
 _Descrição da tela relativa à atividade 4._
 
-[`Tela da atividade 2`](images/wr-cadastrar-usuario.png)
+[`Tela da atividade 4`](images/wr-cadastrar-usuario.png)
 
 
 
@@ -44,11 +44,11 @@ _Descrição da tela relativa à atividade 2._
 
 _Descrição da tela relativa à atividade 3._
 
-[`Tela da atividade 2`](images/wr-usuarios.png)
+[`Tela da atividade 3`](images/wr-usuarios.png)
 
 _Descrição da tela relativa à atividade 4._
 
-[`Tela da atividade 2`](images/wr-editar-usuario.png)
+[`Tela da atividade 4`](images/wr-editar-usuario.png)
 
 ## 6.4. Telas do processo 3
 
@@ -66,7 +66,7 @@ _Descrição da tela relativa à atividade 2._
 
 Descrição da tela relativa à atividade 4._
 
-[`Tela da atividade 2`](images/wr-cadastrar-produto.png)
+[`Tela da atividade 3`](images/wr-cadastrar-produto.png)
 
 
 ## 6.5. Telas do processo 4
@@ -81,11 +81,11 @@ _Descrição da tela relativa à atividade 2._
 
 Descrição da tela relativa à atividade 2._
 
-[`Tela da atividade 2`](images/wr-produtos.png)
+[`Tela da atividade 3`](images/wr-produtos.png)
 
 Descrição da tela relativa à atividade 4._
 
-[`Tela da atividade 2`](images/wr-editar-produto.png)
+[`Tela da atividade 4`](images/wr-editar-produto.png)
 
 ## 6.6. Telas do processo 5
 
@@ -99,7 +99,7 @@ _Descrição da tela relativa à atividade 2._
 
 _Descrição da tela relativa à atividade 3._
 
-[`Tela da atividade 2`](images/wr-vendas.png)
+[`Tela da atividade 3`](images/wr-vendas.png)
 
 ## 6.7. Telas do processo 6
 
@@ -113,15 +113,15 @@ _Descrição da tela relativa à atividade 2._
 
 _Descrição da tela relativa à atividade 3._
 
-[`Tela da atividade 2`](images/wr-vendas.png)
+[`Tela da atividade 3`](images/wr-vendas.png)
 
 _Descrição da tela relativa à atividade 4._
 
-[`Tela da atividade 2`](images/wr-historico-vendas.png)
+[`Tela da atividade 4`](images/wr-historico-vendas.png)
 
 _Descrição da tela relativa à atividade 5._
 
-[`Tela da atividade 2`](images/wr-editar-venda.png)
+[`Tela da atividade 5`](images/wr-editar-venda.png)
 
 ## 6.8. Telas do processo 7
 
@@ -135,7 +135,7 @@ _Descrição da tela relativa à atividade 2._
 
 _Descrição da tela relativa à atividade 3._
 
-[`Tela da atividade 2`](images/wr-relatorio-financeiro.png)
+[`Tela da atividade 3`](images/wr-relatorio-financeiro.png)
 
 ## 6.9. Telas do processo 8
 
@@ -149,5 +149,5 @@ _Descrição da tela relativa à atividade 2._
 
 _Descrição da tela relativa à atividade 3._
 
-[`Tela da atividade 2`](images/wr-relatorio-estoque.png)
+[`Tela da atividade 3`](images/wr-relatorio-estoque.png)
 
