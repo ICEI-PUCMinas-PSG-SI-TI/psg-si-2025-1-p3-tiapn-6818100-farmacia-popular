@@ -42,31 +42,45 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Atividade 1 - Acessar o Sistema**
 
+| **Campo**       | **Tipo**         | **Restrições**      | **Valor default** |
+| ---             | ---              | ---                 | ---               |
+| [Matrícula]     | [Caixa de Texto] | Gerada pelo sistema | ---     |
+| [Senha]         | [Caixa de Texto] | --- | ---     |
+
+| **Comandos**    |  **Destino**     | **Tipo**                 |
+| ---             | ---              | ---                      |
+| [Entrar]        | Tela Inicial (Selecionar processo)     | default      |
+
+
+**Atividade 2 - Selecionar Opção Vendas**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| --- | ---  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| **Comandos**       |  **Destino**                   | **Tipo**            |
+| ---                | ---                            | ---                 |
+| [Vendas]           | Tela de Vendas (Carrinho) | default  |
 
 
-**Nome da atividade 2**
-
+**Atividade 3 - Consultar Histórico**
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Consultar Histórico]| Histórico de Vendas |  Botão  |
+
+
+**Atividade 4 - Consultar Histórico**
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Editar Pedido (lápis)] | Tela com itens              |  Botão  |
+| [Excluir Pedido] | ---              |  Botão  |
+| [Cancelar]       | ---              |  cancelar  |
+
+
