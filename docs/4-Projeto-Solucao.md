@@ -42,15 +42,9 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 | Entidade          | Atributos                                                | Relacionamentos                                                                  |
 |-------------------|----------------------------------------------------------|----------------------------------------------------------------------------------|
 | Funcionário       | matrícula, nome, cargo, senha, ativo                     | Solicita pedidos de compra e emite pedidos de venda (1:N)                        |
-| Pedido_Compra     | número, data, valor_total (derivado)                     | Possui itens de compra (1:N)                                                     |
-| Pedido_Venda      | número, data, valor_total (derivado)                     | Possui itens de venda (1:N)                                                      |
-| Item_Compra       | número, quantidade, preço                                | Pertence a um pedido de compra (N:1), refere-se a um produto (N:1)              |
-| Item_Venda        | número, quantidade, preço                                | Pertence a um pedido de venda (N:1), refere-se a um produto (N:1)               |
-| Produto           | código, descrição, preço                                 | Relacionado a itens, estoque, fornecimento e laboratório                        |
-| Estoque           | quantidade, validade, lote                               | Armazena produtos (1:N)                                                         |
-| Fornecedor        | código, descrição, CNPJ, email, telefone, endereço       | Fornece produtos via fornecimento (1:N)                                         |
-| Fornecimento      | (entidade associativa)                                   | Associação entre Produto e Fornecedor (N:M)                                     |
-| Laboratório       | código, descrição, CNPJ                                  | Fabrica produtos (1:N)                                                          |
+| Pedido_Venda      | número, data, valor_total (calculado), id_funcionario    | Possui itens de venda (1:N)                                                      |
+| Item_Venda        | número, quantidade, preço, id_pedido, id_produto         | Pertence a um pedido de venda (N:1), refere-se a um produto (N:1)               |
+| Produto           | código, descrição, preço, quantidade, validade, lote, laboratório |          |
 
 **Notas:**
 - O valor total dos pedidos é **derivado** da soma dos itens.
