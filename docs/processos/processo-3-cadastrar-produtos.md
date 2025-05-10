@@ -10,7 +10,7 @@ O processo se inicia com um funcionário (ou gerente) acessando o sistema, selec
 
 O funcionário confirma a ação deseja, o sistema atualiza as informações no banco de dados, informa o status da operação e o processo é finalizado. Caso escolha a opção cancelar, o processo finaliza sem alterar dados no sistema.
 
-![Cadastrar Produtos](../images/03-cadastrar-produtos.png "Cadastrar Produtos.")
+![Cadastrar Produtos](docs/images/03-cadastrar-produtos.png "Cadastrar Produtos.")
 
 #### Detalhamento das atividades
 
