@@ -25,9 +25,6 @@ O gerente confirma a ação deseja, o sistema atualiza as informações no banco
 
 
 **Atividade 2 - Selecionar Opção Usuários**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| ---             | ---              |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
@@ -35,9 +32,6 @@ O gerente confirma a ação deseja, o sistema atualiza as informações no banco
 
 
 **Atividade 3 - Clicar em Adicionar Usuário**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| ---             | ---              |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
