@@ -22,7 +22,7 @@ PRINCIPAIS TELAS
 ![Tela inicial](images/wr-inicial.png)
 ![Tela de usuarios](images/wr-usuarios.png)
 ![Tela do produto](images/wr-produtos.png)
-![Tela de vendas](images/wr-venda.png)
+![Tela de vendas](images/wr-vendas.png)
 ![Tela relatorio](images/wr-relatorio-financeiro.png)
 
 ## Diagrama de Classes
