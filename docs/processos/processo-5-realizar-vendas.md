@@ -21,9 +21,6 @@ O funcionário separa os itens, o cliente realiza o pagamento e os produtos são
 
 
 **Atividade 2 - Selecionar Opção Vendas**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
@@ -31,8 +28,6 @@ O funcionário separa os itens, o cliente realiza o pagamento e os produtos são
 
 
 **Atividade 3 - Incluir Itens**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
