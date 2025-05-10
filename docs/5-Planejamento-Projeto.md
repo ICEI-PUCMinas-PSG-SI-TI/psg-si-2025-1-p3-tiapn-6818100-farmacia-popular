@@ -21,10 +21,10 @@
 ### Sprint 3
 - _Scrum master_: Davi Guedes
 - Protótipos de telas: Lilith Fernandes
-- : Julia Clara
-- : Emili Barbosa
-- : Guilherme Neves
-- : Humberto Faria
+- Modelos : Julia Clara
+- Modelos: Emili Barbosa
+- Modelos: Guilherme Neves
+- Modelos: Humberto Faria
 
 ## 5.1. Quadro de tarefas
 
@@ -58,11 +58,11 @@ Atualizado em: 25/04/2025
 
 | Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
-| Julia Clara      |     | 11/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
-| Emili Barbosa    |     | 11/04/2025     | 28/02/2025 | ✔️     | 28/03/2025 |
-| Guilherme Neves  |     | 11/04/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
-| Lilith Fernandes |     | 11/04/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
-| Humberto Faria   |     | 11/04/2025     | 04/04/2025 | ✔️     | 28/03/2025 |
+| Julia Clara      |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Emili Barbosa    |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Guilherme Neves  |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Lilith Fernandes |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Humberto Faria   |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
 
 Legenda:
 - ✔️: terminado
