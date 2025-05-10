@@ -19,22 +19,22 @@ Essa estrutura separa claramente as responsabilidades entre as camadas da aplica
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 PRINCIPAIS TELAS
 
-### Tela de Login
+### Tela de Login onde funcionário informa matrícula, cargo e senha
 ![Tela de login](images/wr-login.png)
 
-### Tela Inicial
+### Tela Inicial para escolher a função que quer acessar
 ![Tela inicial](images/wr-inicial.png)
 
-### Tela de Usuários
+### Tela para gerenciar os usuários
 ![Tela de usuarios](images/wr-usuarios.png)
 
-### Tela de Produtos
+### Tela para gerenciar os produtos
 ![Tela do produto](images/wr-produtos.png)
 
-### Tela de Vendas
+### Tela para realização de vendas
 ![Tela de vendas](images/wr-vendas.png)
 
-### Tela de Relatório
+### Tela de visualização dos relatórios
 ![Tela relatorio](images/wr-relatorio-financeiro.png)
 
 ## Diagrama de Classes
