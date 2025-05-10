@@ -26,9 +26,6 @@ O gerente pode atualizar os dados ou excluir. O sistema atualiza as informaçõe
 
 
 **Atividade 2 - Selecionar Opção Vendas**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
 
 | **Comandos**       |  **Destino**                   | **Tipo**            |
 | ---                | ---                            | ---                 |
@@ -36,8 +33,6 @@ O gerente pode atualizar os dados ou excluir. O sistema atualiza as informaçõe
 
 
 **Atividade 3 - Consultar Histórico**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
@@ -45,8 +40,6 @@ O gerente pode atualizar os dados ou excluir. O sistema atualiza as informaçõe
 
 
 **Atividade 4 - Alterar Pedido**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
