@@ -27,9 +27,6 @@ O funcionário confirma a ação deseja, o sistema atualiza as informações no 
 
 
 **Atividade 2 - Selecionar Opção Produtos**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
@@ -37,9 +34,6 @@ O funcionário confirma a ação deseja, o sistema atualiza as informações no 
 
 
 **Atividade 3 - Clicar em Adicionar Produto**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
