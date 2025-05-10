@@ -27,9 +27,6 @@ O funcionário pode atualizar os dados e em seguida clicar em confirmar, ou remo
 
 
 **Atividade 2 - Selecionar Opção Produtos**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
@@ -37,9 +34,6 @@ O funcionário pode atualizar os dados e em seguida clicar em confirmar, ou remo
 
 
 **Atividade 3 - Clicar em Editar Produto (Lápis)**
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| --- | ---  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
