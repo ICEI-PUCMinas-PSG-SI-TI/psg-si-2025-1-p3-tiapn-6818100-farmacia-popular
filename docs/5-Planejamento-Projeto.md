@@ -28,10 +28,10 @@
 
 ### Sprint 4
 - _Scrum master_: Davi Guedes
-- Telas do processo : Lilith Fernandes
-- Telas do processo : Julia Clara
-- Telas do processo : Emili Barbosa
-- Telas do processo : Guilherme Neves
+- Telas do processo: Lilith Fernandes
+- Telas do processo: Julia Clara
+- Telas do processo: Emili Barbosa
+- Telas do processo: Guilherme Neves
 - Banco de dados e API: Humberto Faria
 
 ## 5.1. Quadro de tarefas
