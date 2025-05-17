@@ -26,6 +26,14 @@
 - Modelos: Guilherme Neves
 - Modelos: Humberto Faria
 
+### Sprint 4
+- _Scrum master_: Davi Guedes
+- Telas do processo : Lilith Fernandes
+- Telas do processo : Julia Clara
+- Telas do processo : Emili Barbosa
+- Telas do processo : Guilherme Neves
+- Banco de dados e API: Humberto Faria
+
 ## 5.1. Quadro de tarefas
 
 ## Sprint 1
@@ -64,10 +72,22 @@ Atualizado em: 25/04/2025
 | Lilith Fernandes |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
 | Humberto Faria   |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
 
+## Sprint 4
+
+Atualizado em: 16/05/2025
+
+| Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
+| Davi Guedes      |     |   16/05/2025   |  |   📝   |  |
+| Julia Clara      |     |   16/05/2025   |  |   📝   |  |
+| Emili Barbosa    |     |   16/05/2025   |  |   📝   |  |
+| Guilherme Neves  |     |   16/05/2025   |  |   📝   |  |
+| Lilith Fernandes |     |   16/05/2025   |  |   📝   |  |
+| Humberto Faria   |  Configuração do banco de dados para receber os dados das interfaces e APIs para chamada do banco   |   16/05/2025   |  |   📝   |  |
+
 Legenda:
 - ✔️: terminado
 - 📝: em execução
 - ⌛: atrasado
 - ❌: não iniciado
-
 
