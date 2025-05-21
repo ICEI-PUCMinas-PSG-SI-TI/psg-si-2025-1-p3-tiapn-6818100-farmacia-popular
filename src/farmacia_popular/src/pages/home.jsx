@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import '../App.css'
+import Navbar from "../components/Navbar.jsx";
 
 function Home() {
 
   return (
       <>
-          <h1 className="text-red-600">
-              Hello world!
-          </h1>
+          <Navbar />
+          <div className="container">
+
+          </div>
       </>
   )
 }
