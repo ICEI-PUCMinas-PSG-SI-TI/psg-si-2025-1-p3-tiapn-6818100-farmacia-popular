@@ -4,27 +4,35 @@
     --color-primary: #B2EBF2;
     --color-secondary: #E0F7FA;
 }
-@layer base{
-    body{
+@layer base {
+    body {
         background: linear-gradient(124deg, #E0F7FA -2.28%, #B2EBF2 118.51%);
         margin: 0;
         padding: 0;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
+
 @layer components {
     .container {
         @apply rounded-[16px] bg-white/60;
     }
-    .produto-box{
+
+    .produto-box {
         @apply drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[5px] bg-white/60;
     }
-    .navbar{
-        @apply fixed border-[11px] border-white flex items-center justify-between  bg-white/60 rounded-[16px] ;
+
+    .navbar {
+        @apply hidden md:flex fixed justify-center z-100  top-10 border-[11px] border-white items-center md:gap-25 bg-white/60 rounded-[16px];
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .navbar::before {
+
+    @media (min-width: 768px){
+        .navbar::before{
         content: '';
         position: absolute;
         top: -40px;
@@ -37,22 +45,76 @@
         background-color: #c8f2f8; /* cor de fundo da tela */
         border-radius: 64px;
         z-index: 0;
+     }
     }
-    .side{
-        @apply flex items-center justify-between ;
+    .side {
+        @apply flex items-center justify-between;
     }
-    .navbar_btn:hover{
+
+    .navbar_btn:hover {
         @apply transition-all duration-200 transform bg-white/60;
 
     }
-    .navbar_btn{
-        @apply py-[13px] px-[42px];
-    }
-    .navbar img{
-        @apply w-[37px];
+
+    .navbar_btn {
+        @apply md:py-[13px] md:px-[42px];
     }
 
+    .navbar img {
+        @apply w-[37px];
+    }
+    @media (min-width: 768px) {
+        .loginBox::before {
+            content: '';
+            position: absolute;
+            top: -70px;
+            width: 180px;
+            height: 114px;
+            border-bottom-width: 8px;
+            border-color: white;
+            background-color: #c8f2f8; /* cor de fundo da tela */
+            border-radius: 64px;
+            z-index: 0;
+        }
+
+        .logoimg{
+            @apply absolute w-[97px] z-100;
+            top: -65px;
+            right: 42%;
+        }
+    }
+
+
+    .loginBox {
+        @apply relative flex flex-col justify-center items-center py-10 px-10 md:px-20 gap-5 md:border-[11px] border-white rounded-[16px];
+        & .logoBox{
+            @apply flex;
+        }
+        & h1 {
+            @apply text-[#424159] text-3xl md:text-5xl font-black leading-none font-[Inter] p-10;
+        }
+        & form {
+            @apply flex flex-col justify-center content-center items-center gap-[18px];
+        }
+
+        & label {
+            @apply self-start text-[#424159] text-[24px] font-normal leading-none font-[Inter] ;
+        }
+        & select {
+            @apply w-full h-[40px] bg-white;
+        }
+        & input {
+            @apply w-[250px] md:w-[456px] h-[40px] bg-white;
+        }
+        & button{
+            @apply bg-white p-4 text-[#424159] text-2xl mt-20;
+        }
+
+    }
+
+
 }
+
 @layer utilities {
 
 }
