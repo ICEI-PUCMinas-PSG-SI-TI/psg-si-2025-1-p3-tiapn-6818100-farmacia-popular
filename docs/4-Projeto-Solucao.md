@@ -75,6 +75,10 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ![Modelo Lógico](./images/modelo-relacional.png)
 
+**Notas:**
+- Será armazenado no banco de dados o **hash** da senha digitada pelo usuário, por isso o tamanho do campo é 60.
+
+
 #### 4.3.3 Modelo Físico
 
 Insira aqui o script de criação das tabelas do banco de dados.
