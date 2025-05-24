@@ -78,11 +78,11 @@ Atualizado em: 16/05/2025
 
 | Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
-| Julia Clara      |  Criar as telas do sistema referentes ao processo 1, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   📝   | 23/05/2025 |
-| Emili Barbosa    |  Criar as telas do sistema referentes ao processo 1, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   📝   | 23/05/2025 |
-| Guilherme Neves  |  Criar as telas do sistema referentes ao processo 2, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   📝   | 23/05/2025 |
-| Lilith Fernandes |  Criar as telas do sistema referentes ao processo 2, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   📝   | 23/05/2025 |
-| Humberto Faria   |  Configuração do banco de dados para receber os dados das interfaces e APIs para chamada do banco   |   16/05/2025   |  |   📝   | 23/05/2025 |
+| Julia Clara      |  Criar as telas do sistema referentes ao processo 1, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   ✔️   | 23/05/2025 |
+| Emili Barbosa    |  Criar as telas do sistema referentes ao processo 1, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   ✔️   | 23/05/2025 |
+| Guilherme Neves  |  Criar as telas do sistema referentes ao processo 2, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   ⌛   | 23/05/2025 |
+| Lilith Fernandes |  Criar as telas do sistema referentes ao processo 2, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 23/05/2025 |   ✔️   | 23/05/2025 |
+| Humberto Faria   |  Configuração do banco de dados para receber os dados das interfaces e APIs para chamada do banco   |   16/05/2025   | 23/05/2025 |   ✔️   | 23/05/2025 |
 
 Legenda:
 - ✔️: terminado
