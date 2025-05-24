@@ -24,7 +24,7 @@
 - Modelos : Julia Clara
 - Modelos: Emili Barbosa
 - Modelos: Guilherme Neves
-- Modelos: Humberto Faria
+- Esquema Relacional e Modelo Físico: Humberto Faria
 
 ### Sprint 4
 - _Scrum master_: Davi Guedes
@@ -66,11 +66,11 @@ Atualizado em: 25/04/2025
 
 | Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
-| Julia Clara      |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
-| Emili Barbosa    |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
-| Guilherme Neves  |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
-| Lilith Fernandes |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
-| Humberto Faria   |  Modelos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Julia Clara      |  Diagrama de classes que ilustra graficamente como será a estrutura do software e como cada uma das classes da sua estrutura estarão interligadas   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Emili Barbosa    |  Tabela de Entidades e Relacionamentos   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Guilherme Neves  |  Modelo ER de um diagrama como as entidades se relacionam entre si na aplicação interativa   | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Lilith Fernandes |  Protótipos das telas que servirão de guia para a construção da interface web  | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
+| Humberto Faria   |  Modelagem do Esquema Relacional e Modelo Físico do bando de dados | 11/04/2025     | 09/05/2025 | ✔️     | 08/05/2025 |
 
 ## Sprint 4
 
