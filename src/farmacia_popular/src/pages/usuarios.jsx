@@ -1,16 +1,15 @@
 import { useState } from 'react'
-import '../App.css'
 import Navbar from "../components/Navbar.jsx";
-import Menu from '../components/Menu.jsx';
+import UserList from '../components/Userlist.jsx';
 
-function Home() {
+function Usuario() {
 
   return (
       <>
           <Navbar />
-          <Menu />
+          <UserList />
       </>
   )
 }
 
-export default Home
+export default Usuario
