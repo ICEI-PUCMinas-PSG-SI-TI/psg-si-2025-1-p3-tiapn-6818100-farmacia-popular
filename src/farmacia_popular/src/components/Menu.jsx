@@ -10,7 +10,7 @@ export default function Menu() {
   ]
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center p-6 overflow-hidden ">
+    <div className="flex flex-col items-center justify-center p-6 overflow-hidden ">
       <h1 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
         Bem vindo, <span className="text-red-600 font-semibold">Usuário (name)</span>
       </h1>

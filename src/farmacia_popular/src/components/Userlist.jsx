@@ -17,7 +17,7 @@ export default function UserList() {
   return (
     <>
       <div className="min-h-screen flex flex-col justify-center">
-        <div className="p-6 bg-gradient-to-b from-white to-blue-200 shadow-md max-w-2xl w-150 mx-auto rounded-lg ">
+        <div className="p-6 bg-gradient-to-b from-white primary shadow-md max-w-2xl w-150 mx-auto rounded-lg ">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-xl font-bold text-gray-800">Usuários</h2>
             <button className="flex items-center gap-1 text-sm font-semibold text-blue-700 hover:underline">

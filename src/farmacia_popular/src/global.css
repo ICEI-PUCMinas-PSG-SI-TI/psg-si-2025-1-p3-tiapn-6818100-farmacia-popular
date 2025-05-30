@@ -10,15 +10,19 @@
         margin: 0;
         padding: 0;
         height: 100vh;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        justify-items: center;
     }
 }
 
 @layer components {
     .container {
-        @apply rounded-[16px] bg-white/60;
+        @apply rounded-[16px] bg-white/60 ;
+
     }
 
     .produto-box {
@@ -26,29 +30,9 @@
     }
 
     .navbar {
-        @apply hidden md:flex justify-center z-100 top-10 border-[11px] border-white items-center md:gap-25 bg-white/60 rounded-[16px] mt-22 relative;
+        @apply top-0 content-center justify-between z-100 border-[11px] border-white items-center md:gap-8 bg-white/60 rounded-[16px] mt-8;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    @media (min-width: 768px){
-        .navbar::before{
-        content: '';
-        position: absolute;
-        top: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 124.161px;
-        height: 78.636px;
-        border-bottom-width: 8px;
-        border-color: white;
-        background-color: #c8f2f8; /* cor de fundo da tela */
-        border-radius: 64px;
-        z-index: 0;
-     }
-    }
-    .side {
-        @apply flex items-center justify-between;
     }
 
     .navbar_btn:hover {
@@ -62,26 +46,6 @@
 
     .navbar img {
         @apply w-[37px];
-    }
-    @media (min-width: 768px) {
-        .loginBox::before {
-            content: '';
-            position: absolute;
-            top: -70px;
-            width: 180px;
-            height: 114px;
-            border-bottom-width: 8px;
-            border-color: white;
-            background-color: #15b5ce; /* cor de fundo da tela */
-            border-radius: 64px;
-            z-index: 0;
-        }
-
-        .logoimg{
-            @apply absolute w-[97px] z-100;
-            top: -65px;
-            right: 42%;
-        }
     }
 
 
@@ -111,7 +75,9 @@
         }
 
     }
+    .PesquisarAdicionarBox{
 
+    }
 
 }
 
