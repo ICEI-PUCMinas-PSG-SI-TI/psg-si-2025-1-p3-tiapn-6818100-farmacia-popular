@@ -34,6 +34,10 @@
 - Telas do processo 4: Lilith Fernandes
 - Banco de dados e API: Humberto Faria
 
+### Sprint 5
+- _Scrum master_: 
+- 
+
 ## 5.1. Quadro de tarefas
 
 ## Sprint 1
@@ -83,6 +87,15 @@ Atualizado em: 16/05/2025
 | Guilherme Neves  |  Criar as telas do sistema referentes ao processo 2, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 30/05/2025 |   ✔️   | 29/05/2025 |
 | Lilith Fernandes |  Criar as telas do sistema referentes ao processo 4, focando no layout e nos elementos visuais que serão usados pelo usuário. As interfaces estão sendo desenvolvidas de forma que possam ser integradas futuramente ao banco de dados.   |   16/05/2025   | 30/05/2025 |   ✔️   | 30/05/2025 |
 | Humberto Faria   |  Configuração do banco de dados para receber os dados das interfaces e APIs para chamada do banco   |   16/05/2025   | 23/05/2025 |   ✔️   | 23/05/2025 |
+
+## Sprint 5
+
+Atualizado em: 13/06/2025
+
+| Responsável      | Tarefa/Requisito          | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----:           |    :----:                 |      :----:    | :----:     | :----: | :----:          |
+|                  |                           |                |            |   ✔️   |                |
+
 
 Legenda:
 - ✔️: terminado
