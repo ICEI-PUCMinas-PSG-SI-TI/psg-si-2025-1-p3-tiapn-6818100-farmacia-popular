@@ -1,6 +1,13 @@
-INSERT INTO `farmacia`.`funcionario` (`id`, `nome`, `cargo`, `senha`, `ativo`) VALUES
-(1, 'Mariana Alves', 'GERENTE', '$2b$12$SMwA9ll0FapS6UqqpYkLW.c2QnQEwgY9DmYrgW6hy/hs4k0G3xR96', 'SIM'),
-(2, 'João Pereira', 'EMPREGADO', '$2b$12$rsSbewoYuRiulfut60ILV.qjFQoNk29s30R.wuwYABX35MN/sFHv2', 'SIM'),
-(3, 'Larissa Costa', 'EMPREGADO', '$2b$12$1m36g1ZwhFQSC.HIHtZCLeXHWRxnYMmQCi5GJQ1v5uLgKtEowL3q6', 'SIM');
+INSERT INTO `sql10780869`.`funcionario` (`id`, `nome`, `cargo`, `senha`, `ativo`) VALUES
+(1, 'Mariana', 'GERENTE', '$2b$12$UfK2e.1MhUJt5OMefpnFnuaUfx0t57GgpK7nA4DXP2cLIxVfYetGK', 'SIM'),
+(2, 'Joao', 'EMPREGADO', '$2b$12$V3FkAFgS4ypoB1O9ofVwqONbimNpVHk8eSVPD/bOzQsChK7MoG4HO', 'SIM'),
+(3, 'Larissa', 'EMPREGADO', '$2b$12$89P/lInGywSUoXd4/jqLC.j6m25znaytZnhYuyDklBT7GbOZ4J8zW', 'SIM');
 
-ALTER TABLE `farmacia`.`funcionario` AUTO_INCREMENT = 4;
+ALTER TABLE `sql10780869`.`funcionario` AUTO_INCREMENT = 4;
+
+
+-- | Senha Original | Hash Bcrypt                                                   |
+-- | -------------- | ------------------------------------------------------------- |
+-- | senh@123       | $2b$12$UfK2e.1MhUJt5OMefpnFnuaUfx0t57GgpK7nA4DXP2cLIxVfYetGK  |
+-- | abc12345       | $2b$12$V3FkAFgS4ypoB1O9ofVwqONbimNpVHk8eSVPD/bOzQsChK7MoG4HO  |
+-- | 1234abcd       | $2b$12$89P/lInGywSUoXd4/jqLC.j6m25znaytZnhYuyDklBT7GbOZ4J8zW  |

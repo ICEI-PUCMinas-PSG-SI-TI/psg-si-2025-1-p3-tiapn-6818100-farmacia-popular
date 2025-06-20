@@ -1,4 +1,4 @@
-INSERT INTO `farmacia`.`produto` (`id`, `descricao`, `preco`, `quantidade`, `validade`, `lote`, `laboratorio`) VALUES 
+INSERT INTO `sql10780869`.`produto` (`id`, `descricao`, `preco`, `quantidade`, `validade`, `lote`, `laboratorio`) VALUES 
 (1, 'Magnésio', 6.79, 187, '2025-12-13', 'L4882', 'Medley'),
 (2, 'Valproato de Sódio', 54.31, 395, '2027-10-17', 'L5593', 'Bayer'),
 (3, 'Quetiapina', 123.05, 231, '2027-08-21', 'L8513', 'Medley'),
@@ -100,4 +100,4 @@ INSERT INTO `farmacia`.`produto` (`id`, `descricao`, `preco`, `quantidade`, `val
 (99, 'Valproato de Sódio', 71.47, 229, '2026-04-29', 'L8186', 'Sanofi'),
 (100, 'Carbamazepina', 41.05, 378, '2027-05-25', 'L9148', 'Neo Química');
 
-ALTER TABLE `farmacia`.`produto` AUTO_INCREMENT = 101;
+ALTER TABLE `sql10780869`.`produto` AUTO_INCREMENT = 101;

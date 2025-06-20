@@ -1,13 +1,13 @@
 -- -----------------------------------------------------
--- Schema farmacia
+-- Schema sql10780869
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `farmacia` DEFAULT CHARACTER SET utf8 ;
-USE `farmacia` ;
+CREATE SCHEMA IF NOT EXISTS `sql10780869` DEFAULT CHARACTER SET utf8 ;
+USE `sql10780869` ;
 
 -- -----------------------------------------------------
--- Table `farmacia`.`produto`
+-- Table `sql10780869`.`produto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `farmacia`.`produto` (
+CREATE TABLE IF NOT EXISTS `sql10780869`.`produto` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(80) NOT NULL,
   `preco` DECIMAL(8,2) NOT NULL,
@@ -19,9 +19,9 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`produto` (
 
 
 -- -----------------------------------------------------
--- Table `farmacia`.`funcionario`
+-- Table `sql10780869`.`funcionario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
+CREATE TABLE IF NOT EXISTS `sql10780869`.`funcionario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(80) NOT NULL,
   `cargo` ENUM("GERENTE", "EMPREGADO") NOT NULL,
@@ -32,9 +32,9 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`funcionario` (
 
 
 -- -----------------------------------------------------
--- Table `farmacia`.`pedido_venda`
+-- Table `sql10780869`.`pedido_venda`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
+CREATE TABLE IF NOT EXISTS `sql10780869`.`pedido_venda` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `data` DATETIME NOT NULL,
   `id_funcionario` INT NOT NULL,
@@ -42,15 +42,15 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`pedido_venda` (
   INDEX `fk_matricula_funcionario_idx` (`id_funcionario` ASC),
   CONSTRAINT `fk_pedido_venda_1`
     FOREIGN KEY (`id_funcionario`)
-    REFERENCES `farmacia`.`funcionario` (`id`)
+    REFERENCES `sql10780869`.`funcionario` (`id`)
     ON DELETE RESTRICT
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table `farmacia`.`item_venda`
+-- Table `sql10780869`.`item_venda`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
+CREATE TABLE IF NOT EXISTS `sql10780869`.`item_venda` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `id_pedido_venda` INT NOT NULL,
   `id_produto` INT NOT NULL,
@@ -62,11 +62,11 @@ CREATE TABLE IF NOT EXISTS `farmacia`.`item_venda` (
   INDEX `fk_item_venda_2_idx` (`id_produto` ASC),
   CONSTRAINT `fk_item_venda_1`
     FOREIGN KEY (`id_pedido_venda`)
-    REFERENCES `farmacia`.`pedido_venda` (`id`)
-    ON DELETE RESTRICT
+    REFERENCES `sql10780869`.`pedido_venda` (`id`)
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_item_venda_2`
     FOREIGN KEY (`id_produto`)
-    REFERENCES `farmacia`.`produto` (`id`)
-    ON DELETE NO ACTION
+    REFERENCES `sql10780869`.`produto` (`id`)
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION);
