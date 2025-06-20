@@ -5,14 +5,14 @@ export default function Menu() {
     { title: "Usuários", icon: <Users className="w-8 h-8" />, path:"/usuarios" },
     { title: "Produtos", icon: <Boxes className="w-8 h-8" />, path:"/produtos" },
     { title: "Vendas", icon: <ShoppingCart className="w-8 h-8" />, path:"/vendas" },
-    { title: "Relatório Financeiro", icon: <BarChart2 className="w-8 h-8" />, path:"/relatorio-financeiro" },
-    { title: "Relatório Estoque", icon: <Package className="w-8 h-8" />, path:"/relatorio-estoque" },
+    { title: "Relatório de Vendas", icon: <BarChart2 className="w-8 h-8" />, path:"/relatorio-financeiro" },
+    { title: "Relatório de Funcionarios", icon: <Package className="w-8 h-8" />, path:"/relatorio-estoque" },
   ]
 
   return (
     <div className="h-screen flex flex-col justify-start overflow-hidden pt-25">
       <h1 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-left">
-        Bem vindo, <span className="text-red-600 font-semibold">Usuário (name)</span>
+        Bem vindo,
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">

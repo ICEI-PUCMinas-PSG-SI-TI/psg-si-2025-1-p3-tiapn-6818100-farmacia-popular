@@ -9,10 +9,10 @@ import {
 export default function ModalEditUser({ user = { name: 'Senna', cargo: 'Usuário', status: 'Ativo', password: '123456' }, onClose }) {
     const [open, setOpen] = useState(true)
     const [formData, setFormData] = useState({
-        name: user.name,
+        name: user.nome,
         cargo: user.cargo,
         status: user.status,
-        password: user.password || ''
+        password: user.senha || '*******'
     })
 
     const handleChange = (e) => {
