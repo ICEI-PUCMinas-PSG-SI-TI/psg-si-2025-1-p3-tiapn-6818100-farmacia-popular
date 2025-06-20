@@ -10,10 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@headlessui/react": "^2.2.4",
+    "@mui/material": "^7.1.2",
+    "@mui/x-charts": "^8.5.3",
     "@tailwindcss/vite": "^4.1.7",
+    "lucide-react": "^0.518.0",
     "react": "^19.1.0",
+    "react-autocomplete": "^1.8.1",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
+    "react-select": "^5.10.1",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {

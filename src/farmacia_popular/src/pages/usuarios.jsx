@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import Navbar from "../components/Navbar.jsx";
-import UserList from '../components/Userlist.jsx';
+import Navbar from "../components/Navbar.jsx"
+import UserList from "../components/Userlist.jsx"
 
 function Usuario() {
 

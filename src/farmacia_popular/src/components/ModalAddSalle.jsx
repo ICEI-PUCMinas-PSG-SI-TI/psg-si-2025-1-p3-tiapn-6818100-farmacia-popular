@@ -1,34 +1,15 @@
 import { useState } from 'react'
-import {
-    Dialog,
-    DialogBackdrop,
-    DialogPanel,
-    DialogTitle
-} from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 
-export default function ModalEditUser({ user = { name: 'Senna', cargo: 'Usuário', status: 'Ativo', password: '123456' }, onClose }) {
+export default function ModalAddSalle({ onClose }) {
     const [open, setOpen] = useState(true)
-    const [formData, setFormData] = useState({
-        name: user.name,
-        cargo: user.cargo,
-        status: user.status,
-        password: user.password || ''
-    })
-
-    const handleChange = (e) => {
-        const { name, value } = e.target
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }))
-    }
 
     const handleClose = () => {
         setOpen(false)
         onClose?.()
     }
 
-    return (
+    return (    
         <Dialog open={open} onClose={handleClose} className="relative z-10">
             <DialogBackdrop
                 transition
@@ -45,69 +26,59 @@ export default function ModalEditUser({ user = { name: 'Senna', cargo: 'Usuário
                             <div className="sm:flex sm:items-start">
                                 <div className="mt-3 text-center sm:mt-0 sm:text-left w-full">
                                     <DialogTitle as="h3" className="text-lg font-semibold leading-6 text-gray-900 mb-4">
-                                        EDITAR USUÁRIO
+                                        REALIZAR VENDA
                                     </DialogTitle>
 
                                     <div className="mt-2 grid grid-cols-2 gap-4">
                                         <div>
-                                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Nome
+                                            <label htmlFor="produto" className="block text-sm font-medium text-gray-700 mb-1">
+                                                Produto
                                             </label>
                                             <input
                                                 type="text"
-                                                name="name"
-                                                id="name"
-                                                value={formData.name}
-                                                onChange={handleChange}
+                                                name="produto"
+                                                id="produto"
+                                                placeholder="Nome do produto"
                                                 className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
                                             />
                                         </div>
 
                                         <div>
-                                            <label htmlFor="cargo" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Cargo
-                                            </label>
-                                            <select
-                                                name="cargo"
-                                                id="cargo"
-                                                value={formData.cargo}
-                                                onChange={handleChange}
-                                                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
-                                            >
-                                                <option value="Administrador">Administrador</option>
-                                                <option value="Usuário">Usuário</option>
-                                                <option value="Visitante">Visitante</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Senha
+                                            <label htmlFor="comprador" className="block text-sm font-medium text-gray-700 mb-1">
+                                                Comprador
                                             </label>
                                             <input
-                                                type="password"
-                                                name="password"
-                                                id="password"
-                                                value={formData.password}
-                                                onChange={handleChange}
+                                                type="text"
+                                                name="comprador"
+                                                id="comprador"
+                                                placeholder="Nome do comprador"
                                                 className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
                                             />
                                         </div>
 
                                         <div>
-                                            <label htmlFor="status" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Status
+                                            <label htmlFor="quantidade" className="block text-sm font-medium text-gray-700 mb-1">
+                                                Quantidade
                                             </label>
-                                            <select
-                                                name="status"
-                                                id="status"
-                                                value={formData.status}
-                                                onChange={handleChange}
+                                            <input
+                                                type="number"
+                                                name="quantidade"
+                                                id="quantidade"
+                                                placeholder="0"
                                                 className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
-                                            >
-                                                <option value="Ativo">Ativo</option>
-                                                <option value="Inativo">Inativo</option>
-                                            </select>
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label htmlFor="data" className="block text-sm font-medium text-gray-700 mb-1">
+                                                Data
+                                            </label>
+                                            <input
+                                                type="date"
+                                                name="data"
+                                                id="data"
+                                                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -120,13 +91,14 @@ export default function ModalEditUser({ user = { name: 'Senna', cargo: 'Usuário
                                 onClick={handleClose}
                                 className="inline-flex justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
                             >
-                                Confirmar
+                                Confirmar Venda
                             </button>
                             <button
                                 type="button"
+                                onClick={handleClose}
                                 className="inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500"
                             >
-                                Excluir usuário
+                                Cancelar
                             </button>
                         </div>
                     </DialogPanel>
