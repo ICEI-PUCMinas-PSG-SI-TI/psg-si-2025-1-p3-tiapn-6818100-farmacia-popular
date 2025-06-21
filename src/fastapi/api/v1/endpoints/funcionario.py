@@ -41,7 +41,6 @@ async def post_funcionario(
     funcionario: FuncionarioCreateSchema, db: AsyncSession = Depends(get_session),
     funcionario_logado: FuncionarioModel = Depends(get_current_user)
 ):
-    print(f'{funcionario_logado=}')
     # Para criar usuários é necessário ser Gerente.
     if funcionario_logado.cargo != CargoEnum.GERENTE:
         raise HTTPException(
