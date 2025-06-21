@@ -1,7 +1,5 @@
 ## 4. Projeto da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Modelagem-Processos-Negócio.md"> Modelagem do Processo de Negocio</a></span>
-
 ## 4.1. Arquitetura da solução
 
 A arquitetura do sistema é baseada no modelo cliente-servidor e utiliza tecnologias modernas para garantir desempenho, escalabilidade e facilidade de manutenção. O frontend é composto por páginas web desenvolvidas com HTML, CSS e JavaScript, acessadas diretamente pelo navegador. Esse conteúdo estático é hospedado no GitHub Pages, o que facilita o deploy e garante alta disponibilidade. O navegador também faz uso do Local Storage para armazenar dados do usuário e cache de autenticação, proporcionando uma experiência mais fluida e rápida.
