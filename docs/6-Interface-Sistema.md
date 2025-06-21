@@ -1,8 +1,6 @@
 
 # 6. Interface do Sistema
 
-<span style="color:red">Pré-requisitos: <a href="4-Projeto-Solucao.md"> Projeto da Solução</a></span>
-
 ## 6.1. Tela principal do sistema
 
 _Descrição da tela principal do sistema._
